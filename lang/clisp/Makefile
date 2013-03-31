@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.93 2012/10/08 23:01:57 adam Exp $
+# $NetBSD: Makefile,v 1.94 2013/02/16 11:22:51 wiz Exp $
 #
 
 DISTNAME=		clisp-2.49
@@ -16,6 +16,9 @@ LICENSE=		gnu-gpl-v2
 # http://sourceforge.net/tracker/index.php?func=detail&aid=952681&group_id=1355&atid=101355
 NOT_FOR_PLATFORM=	*-*-sparc64
 NOT_FOR_PLATFORM+=	*-*-arm
+
+# makes the bulk build hang under MirBSD
+NOT_FOR_PLATFORM+=	MirBSD-*-*
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
 
