@@ -1,4 +1,4 @@
-<!-- $NetBSD: fixes.xml,v 1.110 2012/09/30 09:16:56 asau Exp $ -->
+<!-- $NetBSD: fixes.xml,v 1.114 2013/03/31 09:10:39 obache Exp $ -->
 
 <chapter id="fixes"> <?dbhtml filename="fixes.html"?>
 <title>Making your package work</title>
@@ -1136,11 +1136,15 @@ pre-configure:
 	for the following macros.</para>
 
 <programlisting>
-FreeBSD     __FreeBSD__
+Cygwin      __CYGWIN__
 DragonFly   __DragonFly__
+FreeBSD     __FreeBSD__
+Haiku       __HAIKU__
 Interix     __INTERIX
 IRIX        __sgi (TODO: get a definite source for this)
 Linux       linux, __linux, __linux__
+MirBSD      __MirBSD__ (__OpenBSD__ is also defined)
+Minix3      __minix
 NetBSD      __NetBSD__
 OpenBSD     __OpenBSD__
 Solaris     sun, __sun

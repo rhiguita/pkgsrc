@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2013/02/16 11:20:06 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2013/02/26 10:22:06 joerg Exp $
 
 DISTNAME=	bmpx-0.40.14
 PKGREVISION=	29
@@ -27,6 +27,10 @@ CHECK_WRKREF_SKIP+=	libexec/beep-media-player-2-bin
 CXXFLAGS+=	-std=c++11
 .endif
 
+.include "../../mk/bsd.fast.prefs.mk"
+.if ${OPSYS} == "Linux"
+.include "../../audio/alsa-lib/buildlink3.mk"
+.endif
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../audio/cdparanoia/buildlink3.mk"
 .include "../../audio/libofa/buildlink3.mk"
