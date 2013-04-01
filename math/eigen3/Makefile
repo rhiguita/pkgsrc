@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2012/09/11 23:04:18 asau Exp $
+# $NetBSD: Makefile,v 1.1 2013/03/17 19:37:19 markd Exp $
 
 DISTNAME=	3.1.2
 PKGNAME=	eigen3-3.1.2
+PKGREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=   http://bitbucket.org/eigen/eigen/get/
 DIST_SUBDIR=	eigen3

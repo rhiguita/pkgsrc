@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2013/02/06 23:21:30 jperkin Exp $
+# $NetBSD: Makefile,v 1.8 2013/02/12 20:36:29 adam Exp $
 
 PKGNAME=	${DISTNAME:S/-/-server-/}
 SVR4_PKGNAME=	mysqs
@@ -14,6 +14,7 @@ DEPENDS+=	mysql-client>=${PKGVERSION_NOREV}:../../databases/mysql55-client
 
 INFO_FILES=		yes
 CMAKE_ARGS+=		-DWITH_LIBWRAP=ON
+CMAKE_ARGS+=		-DINSTALL_INFODIR=${PKGINFODIR}
 
 .if !empty(PKG_OPTIONS:Membedded-server)
 CMAKE_ARGS+=		-DWITH_EMBEDDED_SERVER=ON
