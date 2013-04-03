@@ -1,2 +1,2 @@
-# $NetBSD: version.mk,v 1.2 2012/12/01 02:29:32 sbd Exp $
-GCC_DIST_VERSION:=4.8.0
+# $NetBSD: version.mk,v 1.1 2013/04/01 21:06:16 wiz Exp $
+GCC48_DIST_VERSION:=4.8.0

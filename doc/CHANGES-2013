@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.1143 2013/04/03 00:39:43 rodent Exp $
+$NetBSD: CHANGES-2013,v 1.1154 2013/04/03 12:43:48 jaapb Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -1616,3 +1616,14 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated databases/phpldapadmin to 1.2.3 [taca 2013-04-02]
 	Updated textproc/saxon to 9.4.0.7j [rodent 2013-04-03]
 	Updated www/p5-Plack to 1.0022 [wen 2013-04-03]
+	Updated devel/p5-Moose to 2.0801 [wen 2013-04-03]
+	Updated time/p5-DateTime to 1.01 [wen 2013-04-03]
+	Updated time/p5-DateTime-Format-Builder to 0.81 [wen 2013-04-03]
+	Updated time/p5-DateTime-Format-Strptime to 1.54 [wen 2013-04-03]
+	Updated textproc/p5-Text-CSV_XS to 0.97 [wen 2013-04-03]
+	Updated lang/perl5 to 5.16.3 [adam 2013-04-03]
+	Updated devel/mercurial to 2.5.3 [wiz 2013-04-03]
+	Updated archivers/ocaml-zip to 1.05 [jaapb 2013-04-03]
+	Updated devel/ocaml-lwt to 2.4.3 [jaapb 2013-04-03]
+	Updated net/ocamlnet to 3.6.3 [jaapb 2013-04-03]
+	Updated lang/eag to 2.6 [jaapb 2013-04-03]
