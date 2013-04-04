@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.357 2013/01/05 22:19:45 wiz Exp $
+# $NetBSD: Makefile,v 1.358 2013/04/03 12:19:39 markd Exp $
 #
 
 COMMENT=	Games
@@ -173,6 +173,7 @@ SUBDIR+=	klines
 SUBDIR+=	kmahjongg
 SUBDIR+=	kmines
 SUBDIR+=	knavalbattle
+SUBDIR+=	knetwalk
 SUBDIR+=	knightcap
 SUBDIR+=	knightcap-brain
 SUBDIR+=	knights
