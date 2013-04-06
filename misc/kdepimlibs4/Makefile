@@ -2,12 +2,15 @@
 
 DISTNAME=	kdepimlibs-${_KDE_VERSION}
 PKGNAME=	${DISTNAME:S/-4/4-4/}
+PKGREVISION=	1
 CATEGORIES=	misc
 COMMENT=	Support libraries for PIM for the KDE integrated X11 desktop
 
 .include "../../meta-pkgs/kde4/Makefile.kde4"
 
 CMAKE_DEPENDENCIES_REWRITE= _KDE_build/KDEPimLibsDependencies.cmake
+
+CMAKE_ARGS+=	-DKDE4_BUILD_TESTS:BOOL=OFF
 
 REPLACE_PERL+= mailtransport/kconf_update/migrate-transports.pl
 
