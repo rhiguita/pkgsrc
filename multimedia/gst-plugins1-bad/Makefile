@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2013/02/06 23:23:06 jperkin Exp $
+# $NetBSD: Makefile,v 1.4 2013/03/15 18:34:46 drochner Exp $
 #
 
-USE_LANGUAGES=		c c++
+USE_LANGUAGES=	c c++
 
 .include "Makefile.common"
 
-COMMENT+=		bad plugins
+COMMENT+=	Bad plugins
 
 .include "../../devel/glib2/schemas.mk"
 # bzip2 is likely present anyway, make it default

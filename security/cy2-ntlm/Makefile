@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2012/10/23 18:16:23 asau Exp $
+# $NetBSD: Makefile,v 1.24 2013/02/06 23:23:35 jperkin Exp $
 
 PKGNAME=	${DISTNAME:S/cyrus-sasl/cy2-ntlm/}
 PKGREVISION=	1
@@ -10,7 +10,7 @@ SASL_PLUGIN=	yes
 CONFIGURE_ARGS+=	--enable-ntlm
 CONFIGURE_ARGS+=	--with-openssl=${SSLBASE:Q}
 
-BUILD_DIRS=	${WRKSRC}/plugins
+BUILD_DIRS=	plugins
 BUILD_TARGET=	libntlm.la
 
 .include "../../security/openssl/buildlink3.mk"

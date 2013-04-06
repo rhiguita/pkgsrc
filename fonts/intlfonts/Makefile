@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2008/11/27 13:11:17 obache Exp $
+# $NetBSD: Makefile,v 1.31 2013/04/06 13:01:26 rodent Exp $
 
 DISTNAME=	intlfonts-1.2.1
 PKGREVISION=	5
@@ -39,7 +39,6 @@ CONFIGURE_ARGS+=	--with-type1 --with-truetype
 MISC_FILES=	README.split
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
-EXTRACT_SUFX=	.tar.gz
 EXTRACT_ONLY=	${FONT_SETS:=${EXTRACT_SUFX}}
 
 GNU_CONFIGURE=	yes
@@ -66,8 +65,8 @@ PLIST_SRC=	PLIST PLIST.extrafonts
 .endif
 
 post-extract:
-.for FILE in ${MISC_FILES}
-	${CP} ${_DISTDIR}/${FILE} ${WRKSRC}
+.for file in ${MISC_FILES}
+	${CP} ${_DISTDIR}/${file} ${WRKSRC}
 .endfor
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2013/03/13 12:44:11 jperkin Exp $
+# $NetBSD: Makefile,v 1.8 2013/03/14 16:19:39 taca Exp $
 
 DISTNAME=	innate-2013.02.21
 CATEGORIES=	devel
 
-MAINTAINER=	pkgsrc-users@netbsd.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://github.com/manveru/innate
 COMMENT=	Powerful web-framework wrapper for Rack
 LICENSE=	mit

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2013/02/06 23:21:13 jperkin Exp $
+# $NetBSD: Makefile,v 1.30 2013/02/16 11:19:49 wiz Exp $
 
 DISTNAME=	phonon-4.5.1
 PKGREVISION=	8
@@ -7,7 +7,7 @@ MASTER_SITES=	${MASTER_SITE_KDE:=phonon/4.5.1/src/}
 EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	markd@NetBSD.org
-HOMEPAGE=	http://phonon.kde.org
+HOMEPAGE=	http://phonon.kde.org/
 COMMENT=	Multimedia API for KDE and QT
 LICENSE=	gnu-lgpl-v2.1
 

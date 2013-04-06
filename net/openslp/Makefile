@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2013/02/06 23:23:21 jperkin Exp $
+# $NetBSD: Makefile,v 1.41 2013/02/14 16:51:32 drochner Exp $
 
 DISTNAME=	openslp-1.2.1
 PKGREVISION=	6
@@ -25,8 +25,8 @@ EGDIR=			${PREFIX}/share/examples/${PKGBASE}
 
 CONFS=			slp.conf slp.reg slp.spi
 CONF_FILES=		# empty
-.for FILE in ${CONFS}
-CONF_FILES+=		${EGDIR}/${FILE} ${PKG_SYSCONFDIR}/${FILE}
+.for file in ${CONFS}
+CONF_FILES+=		${EGDIR}/${file} ${PKG_SYSCONFDIR}/${file}
 .endfor
 RCD_SCRIPTS=		slpd
 

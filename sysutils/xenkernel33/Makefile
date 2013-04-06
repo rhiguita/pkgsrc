@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/07/28 12:02:16 drochner Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/23 19:51:36 asau Exp $
 #
 
 VERSION=	3.3.2
@@ -7,7 +7,6 @@ PKGNAME=	xenkernel33-${VERSION}
 PKGREVISION=	6
 CATEGORIES=	sysutils
 MASTER_SITES=	http://bits.xensource.com/oss-xen/release/${VERSION}/
-EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	cegger@NetBSD.org
 HOMEPAGE=	http://xen.org/

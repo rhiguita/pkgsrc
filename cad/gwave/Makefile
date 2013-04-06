@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2012/10/08 23:01:16 adam Exp $
+# $NetBSD: Makefile,v 1.51 2013/02/16 11:20:28 wiz Exp $
 #
 
 DISTNAME=	gwave2-20090213
@@ -8,7 +8,7 @@ CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gwave/}
 
 MAINTAINER=	dmcmahill@NetBSD.org
-HOMEPAGE=	http://gwave.sourceforge.net
+HOMEPAGE=	http://gwave.sourceforge.net/
 COMMENT=	Viewer for spice-like simulator output and other analog data
 LICENSE=	gnu-gpl-v2
 

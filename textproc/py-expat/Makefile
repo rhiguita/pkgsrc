@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/05/05 22:16:14 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/25 06:56:49 asau Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-expat-0
@@ -25,7 +25,7 @@ PYSETUPINSTALLARGS+=	--install-lib ${PREFIX}/${PYLIB}/lib-dynload
 do-patch:
 	(cd ${WRKSRC}; \
 	for f in ${PATCHDIR}/patch-*;do \
-	${PATCH} --batch <$$f || true; \
+	${PATCH} --batch <$$f || ${TRUE}; \
 	done)
 
 .include "../../textproc/expat/buildlink3.mk"

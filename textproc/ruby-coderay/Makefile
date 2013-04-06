@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2012/12/17 13:48:10 taca Exp $
+# $NetBSD: Makefile,v 1.10 2013/03/12 15:33:48 taca Exp $
 
 DISTNAME=	coderay-1.0.9
 CATEGORIES=	textproc
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://coderay.rubychan.de
+HOMEPAGE=	http://coderay.rubychan.de/
 COMMENT=	Syntax highlighter for Ruby and other languages
 LICENSE=	gnu-lgpl-v2.1
 

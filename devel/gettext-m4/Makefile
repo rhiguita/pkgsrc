@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2011/12/27 21:18:05 christos Exp $
+# $NetBSD: Makefile,v 1.20 2013/01/31 21:45:04 adam Exp $
 
 .include "../../devel/gettext/Makefile.common"
 
@@ -21,7 +21,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/gettext-tools/m4/*.m4 \
 		${DESTDIR}${PREFIX}/share/aclocal
 .	for i in lib-ld.m4 lib-link.m4 lib-prefix.m4
-	    ${INSTALL_DATA} ${WRKSRC}/gettext-tools/gnulib-m4/$i \
+	    ${INSTALL_DATA} ${WRKSRC}/gettext-tools/gnulib-m4/${i} \
 		${DESTDIR}${PREFIX}/share/aclocal
 .	endfor
 

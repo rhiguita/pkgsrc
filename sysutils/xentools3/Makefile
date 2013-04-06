@@ -1,22 +1,21 @@
-# $NetBSD: Makefile,v 1.30 2012/12/16 01:52:35 obache Exp $
+# $NetBSD: Makefile,v 1.31 2013/02/06 23:23:54 jperkin Exp $
 #
 
-VERSION=		3.1.4
-DISTNAME=		xen-${VERSION}
-PKGNAME=		xentools3-${VERSION}
-PKGREVISION=		13
-CATEGORIES=		sysutils
+VERSION=	3.1.4
+DISTNAME=	xen-${VERSION}
+PKGNAME=	xentools3-${VERSION}
+PKGREVISION=	13
+CATEGORIES=	sysutils
 MASTER_SITES=	http://bits.xensource.com/oss-xen/release/${VERSION}/
-EXTRACT_SUFX=		.tar.gz
 
-MAINTAINER=		bouyer@NetBSD.org
-HOMEPAGE=		http://xen.org/
-COMMENT=		Userland Tools for Xen
+MAINTAINER=	bouyer@NetBSD.org
+HOMEPAGE=	http://xen.org/
+COMMENT=	Userland Tools for Xen
 
-#DEPENDS+=		${PYPKGPREFIX}-twisted-[0-9]*:../../net/py-twisted
-DEPENDS+=		${PYPKGPREFIX}-readline-[0-9]*:../../devel/py-readline
+#DEPENDS+=	${PYPKGPREFIX}-twisted-[0-9]*:../../net/py-twisted
+DEPENDS+=	${PYPKGPREFIX}-readline-[0-9]*:../../devel/py-readline
 
-MAKE_JOBS_SAFE=		no
+MAKE_JOBS_SAFE=	no
 
 PKG_SYSCONFSUBDIR=	xen
 

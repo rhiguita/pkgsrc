@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.39 2013/02/16 11:22:16 wiz Exp $
+# $NetBSD: Makefile,v 1.40 2013/04/03 10:51:54 markd Exp $
 #
 
 DISTNAME=	libkexiv2-${_KDE_VERSION}
 CATEGORIES=	graphics
-COMMENT=	a KDE wrapper around exiv2
+COMMENT=	KDE wrapper around exiv2
 
 .include "../../meta-pkgs/kde4/Makefile.kde4"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/10/08 15:18:26 jaapb Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/29 05:06:41 asau Exp $
 
 .include "../../lang/ocaml/Makefile.common"
 DISTINFO_FILE= ${PKGDIR}/../../lang/ocaml/distinfo
@@ -12,7 +12,7 @@ CONFIGURE_ARGS+=	-x11include ${X11BASE}/include
 CONFIGURE_ARGS+=	-x11lib ${X11BASE}/lib
 CONFIGURE_ARGS+=	-no-tk
 
-BUILD_DIRS=		${WRKSRC}/otherlibs/graph
+BUILD_DIRS=		otherlibs/graph
 BUILD_TARGET=		all
 INSTALL_TARGET=		install
 

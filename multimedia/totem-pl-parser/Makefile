@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2012/10/30 20:05:51 drochner Exp $
+# $NetBSD: Makefile,v 1.44 2013/01/26 21:36:39 adam Exp $
 #
 
 DISTNAME=	totem-pl-parser-3.4.3
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
-COMMENT=	totem playlist parser
+COMMENT=	Totem playlist parser
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	DATADIRNAME=share

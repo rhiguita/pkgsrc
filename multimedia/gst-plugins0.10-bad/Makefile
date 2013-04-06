@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.24 2012/10/08 09:21:02 asau Exp $
+# $NetBSD: Makefile,v 1.25 2013/02/06 23:23:06 jperkin Exp $
 #
 
-USE_LANGUAGES=		c c++
+USE_LANGUAGES=	c c++
 
 .include "Makefile.common"
-PKGREVISION=		4
+PKGREVISION=	4
 
-COMMENT+=		bad plugins
+COMMENT+=	Bad plugins
 
 # builds gsettings module
 BUILDLINK_API_DEPENDS.glib2+= glib2>=2.26.0

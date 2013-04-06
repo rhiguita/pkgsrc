@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/10/23 18:16:23 asau Exp $
+# $NetBSD: Makefile,v 1.16 2013/02/06 23:23:34 jperkin Exp $
 
 PKGNAME=	${DISTNAME:S/cyrus-sasl/cy2-digestmd5/}
 PKGREVISION=	1
@@ -13,7 +13,7 @@ CONFIGURE_ARGS+=	--enable-digest
 CONFIGURE_ARGS+=	--with-rc4
 CONFIGURE_ARGS+=	--with-openssl=${SSLBASE:Q}
 
-BUILD_DIRS=	${WRKSRC}/plugins
+BUILD_DIRS=	plugins
 BUILD_TARGET=	libdigestmd5.la
 
 .include "../../security/openssl/buildlink3.mk"

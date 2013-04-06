@@ -1,3 +1,5 @@
+# $NetBSD$
+
 DISTNAME=	emacs-nox11-${MY_EMACS_VERSION}
 MYPKGREVISION=	0	# Do not remove this when zero
 

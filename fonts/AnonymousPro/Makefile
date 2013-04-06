@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/09/03 18:24:47 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 18:28:15 asau Exp $
 #
 
 DISTNAME=	AnonymousPro-1.001
@@ -32,7 +32,7 @@ INSTALL_DOCS=   FONTLOG.txt OFL-FAQ.txt OFL.txt README.txt
 
 post-extract:
 	cd ${WRKSRC} && for i in *.ttf; do \
-		j=`echo $$i | sed "s/ //g"`; \
+		j=`${ECHO} $$i | sed "s/ //g"`; \
 		mv "$$i" "$$j"; done
 
 do-install:

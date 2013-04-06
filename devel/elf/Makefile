@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/10/31 11:16:55 asau Exp $
+# $NetBSD: Makefile,v 1.16 2013/03/28 23:59:03 joerg Exp $
 #
 
 DISTNAME=	elf-0.5.3
@@ -13,7 +13,7 @@ COMMENT=	ELF header analyzer
 
 GNU_CONFIGURE=	YES
 
-BUILD_DIRS=	${WRKSRC}/src
+BUILD_DIRS=	src
 BUILD_TARGET=	elf
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1

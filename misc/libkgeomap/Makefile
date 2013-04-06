@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2013/02/16 11:19:53 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2013/04/03 12:36:51 markd Exp $
 #
 
 PKGNAME=	libkgeomap-3.1.0
@@ -23,9 +23,9 @@ PKGCONFIG_OVERRIDE+=	libkgeomap.pc.cmake
 WRKSRC=			${WRKDIR}/${DISTNAME}/extra/libkgeomap
 
 post-patch:
-	echo "FIND_PACKAGE(Msgfmt REQUIRED)" >> ${WRKSRC}/CMakeLists.txt
-	echo "FIND_PACKAGE(Gettext REQUIRED)" >> ${WRKSRC}/CMakeLists.txt
-	echo "ADD_SUBDIRECTORY(po)" >> ${WRKSRC}/CMakeLists.txt
+	${ECHO} "FIND_PACKAGE(Msgfmt REQUIRED)" >> ${WRKSRC}/CMakeLists.txt
+	${ECHO} "FIND_PACKAGE(Gettext REQUIRED)" >> ${WRKSRC}/CMakeLists.txt
+	${ECHO} "ADD_SUBDIRECTORY(po)" >> ${WRKSRC}/CMakeLists.txt
 	ln -s ../../po ${WRKSRC}/po
 	rm ${WRKSRC}/po/*/digikam.po ${WRKSRC}/po/*/kipiplug* ${WRKSRC}/po/*/libkipi*
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2011/04/22 13:44:45 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/23 19:51:20 asau Exp $
 #
 
 DISTNAME=		pv-0.9.6
@@ -27,7 +27,7 @@ post-install:
 	dir=${DOCDIR:S/^${PREFIX}\///:Q}; cd ${WRKSRC}/doc;		\
 	${GREP} "^$$dir/" ${PKGDIR}/PLIST | ${SED} "s|^$$dir/||" |	\
 	while read file; do						\
-		test ! -f "$$file" ||					\
+		${TEST} ! -f "$$file" ||					\
 			${INSTALL_DATA} "$$file" ${DESTDIR}${PREFIX}/$$dir; \
 	done
 	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${DOCDIR}

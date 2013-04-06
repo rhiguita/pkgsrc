@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/04/15 22:01:00 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/31 11:19:29 asau Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-cursespanel-0
@@ -29,7 +29,7 @@ PYSETUPINSTALLARGS+=	--install-lib ${PREFIX}/${PYLIB}/lib-dynload
 do-patch:
 	(cd ${WRKSRC}; \
 	for f in ${PATCHDIR}/patch-*;do \
-	${PATCH} --batch <$$f || true; \
+	${PATCH} --batch <$$f || ${TRUE}; \
 	done)
 
 .include "../../lang/python/extension.mk"

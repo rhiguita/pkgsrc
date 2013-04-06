@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/mpd
 bin/mpd.py
 bin/mpdallexit

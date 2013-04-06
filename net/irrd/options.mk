@@ -1,3 +1,5 @@
+# $NetBSD$
+
 PKG_OPTIONS_VAR=        PKG_OPTIONS.irrd
 PKG_SUPPORTED_OPTIONS=  pthreads
 PKG_SUGGESTED_OPTIONS=	pthreads
