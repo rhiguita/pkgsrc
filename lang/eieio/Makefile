@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/10/02 20:11:38 asau Exp $
+# $NetBSD: Makefile,v 1.22 2013/02/17 19:18:05 dholland Exp $
 #
 
 DISTNAME=	eieio-0.17
@@ -20,7 +20,7 @@ MAKEFLAGS+=	EMACS=${EMACS_BIN:Q}
 
 NO_CONFIGURE=	yes
 USE_TOOLS+=	gmake
-INFO_FILES=	# PLIST
+INFO_FILES=	yes
 
 # XXX $cd ${WRKSRC}; ${MAKE} -V eieio_LISP
 SRCS=	eieio.el eieio-comp.el eieio-opt.el eieio-custom.el eieio-doc.el \

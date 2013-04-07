@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/10/02 20:11:56 asau Exp $
+# $NetBSD: Makefile,v 1.23 2013/02/17 19:18:05 dholland Exp $
 #
 
 DISTNAME=	twelf-1-4
@@ -27,7 +27,7 @@ MAKE_FILE=	smlnj/Makefile
 MAKEFLAGS+=	sml=${PREFIX:Q}/bin/sml
 BUILD_TARGET=	twelf-server twelf-sml
 
-INFO_FILES=		# PLIST
+INFO_FILES=	yes
 
 TWELF_LIBDIR=		${PREFIX}/lib/twelf
 TWELF_EMACSDIR=		${EMACS_LISPPREFIX}/twelf

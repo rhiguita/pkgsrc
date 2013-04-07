@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2012/10/08 09:57:16 asau Exp $
+# $NetBSD: Makefile,v 1.28 2013/02/17 19:18:07 dholland Exp $
 #
 
 DISTNAME=		bbdb-2.35
@@ -22,7 +22,7 @@ CONFIGURE_ARGS+=	--enable-rmail
 GNU_CONFIGURE=		yes
 BUILD_TARGET=		all mhe
 USE_TOOLS+=		makeinfo
-INFO_FILES=		# PLIST
+INFO_FILES=		yes
 LISPDIR=		${EMACS_LISPPREFIX}/bbdb
 INSTALLATION_DIRS=	${EMACS_INFOPREFIX}
 MAKE_JOBS_SAFE=		no

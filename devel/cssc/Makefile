@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2011/02/02 11:31:17 ryoon Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/31 11:16:48 asau Exp $
 #
 
 DISTNAME=	CSSC-1.3.0
@@ -19,6 +19,6 @@ USE_TOOLS+=	diff makeinfo
 TEST_TARGET=	check
 
 TEXINFO_REQD=	4.0
-INFO_FILES=	# PLIST
+INFO_FILES=	yes
 
 .include "../../mk/bsd.pkg.mk"

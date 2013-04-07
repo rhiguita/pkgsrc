@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2013/02/17 19:18:04 dholland Exp $
+# $NetBSD: Makefile,v 1.18 2013/03/24 16:56:32 joerg Exp $
 #
 
 DISTNAME=	tc-2.3.1
@@ -22,6 +22,6 @@ CONFIGURE_ARGS+=--with-lispdir=${EMACS_LISPPREFIX}/tc
 
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	YES
-INFO_FILES=	# PLIST
+INFO_FILES=	yes
 
 .include "../../mk/bsd.pkg.mk"

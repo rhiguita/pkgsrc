@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.111 2013/02/23 13:11:06 asau Exp $
+# $NetBSD: Makefile,v 1.112 2013/04/06 14:09:34 rodent Exp $
 
 DISTNAME=	octave-${OCTAVE_VER}
 CATEGORIES=	math
@@ -70,7 +70,8 @@ SUBST_CLASSES+=			unwrapping
 SUBST_STAGE.unwrapping=		post-build
 SUBST_MESSAGE.unwrapping=	Unwrapping wrapper scripts.
 SUBST_FILES.unwrapping=		src/mkoctfile
-SUBST_SED.unwrapping=		-e 's:$(DESTDIR)::g' -e 's:$(BUILDLINK_DIR)/lib:$(PREFIX)/lib:g'
+SUBST_SED.unwrapping=		-e 's:$(DESTDIR)::g'
+SUBST_SED.unwrapping+=		-e 's:$(BUILDLINK_DIR)/lib:$(PREFIX)/lib:g'
 
 SUBST_CLASSES+=			fix-make
 SUBST_STAGE.fix-make=		post-patch

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2013/01/26 21:37:51 adam Exp $
+# $NetBSD: Makefile,v 1.44 2013/02/16 11:22:10 wiz Exp $
 #
 
 DISTNAME=	hp2xx-3.4.4
@@ -16,7 +16,7 @@ MAKE_FLAGS=	prefix=${PREFIX}					\
 		mandir=${PREFIX}/${PKGMANDIR}				\
 		infodir=${PREFIX}/${PKGINFODIR}
 MAKE_ENV+=	XLDFLAGS=${LDFLAGS:Q} XCPPFLAGS=${CPPFLAGS:Q}
-INFO_FILES=	# PLIST
+INFO_FILES=	yes
 
 INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX}			\
 		mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}			\

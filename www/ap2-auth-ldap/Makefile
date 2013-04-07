@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/12/16 01:52:36 obache Exp $
+# $NetBSD: Makefile,v 1.23 2013/02/06 23:23:57 jperkin Exp $
 
 DISTNAME=	mod_auth_ldap3.05
 PKGNAME=	ap2-auth-ldap-3.05
@@ -29,8 +29,8 @@ CONFIGURE_ARGS+=	--with-apache-ver=2
 SUBST_CLASSES+=		paths
 SUBST_STAGE.paths=	post-patch
 SUBST_FILES.paths=	configure
-SUBST_SED.paths=	-e "s|@@HASHLIB@@|${PREFIX}/include|g" \
-			-e "s|@@HASHINC@@|${PREFIX}/lib|g"
+SUBST_SED.paths=	-e "s|@@HASHLIB@@|${PREFIX}/include|g"
+SUBST_SED.paths+=	-e "s|@@HASHINC@@|${PREFIX}/lib|g"
 SUBST_MESSAGE.paths=	Fixing hardcoded paths.
 
 INSTALLATION_DIRS+=	lib/httpd

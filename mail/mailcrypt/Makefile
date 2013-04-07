@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2013/03/01 22:07:26 markd Exp $
+# $NetBSD: Makefile,v 1.23 2013/04/01 05:53:24 sbd Exp $
 
 DISTNAME=	mailcrypt-3.5.8
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -21,7 +21,7 @@ GNU_CONFIGURE=	yes
 MAKE_FLAGS+=	prefix=${DESTDIR:Q}${PREFIX:Q} \
 		lispdir=${DESTDIR:Q}${EMACS_LISPPREFIX:Q} \
 		infodir=${DESTDIR:Q}${PREFIX:Q}/${PKGINFODIR}
-INFO_FILES=	# PLIST
+INFO_FILES=	yes
 
 .include "../../editors/emacs/modules.mk"
 .include "../../mk/bsd.pkg.mk"
