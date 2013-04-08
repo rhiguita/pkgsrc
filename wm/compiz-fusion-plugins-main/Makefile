@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2012/10/08 23:00:56 adam Exp $
+# $NetBSD: Makefile,v 1.25 2013/02/16 11:19:58 wiz Exp $
 #
 
 PKGVER=		0.8.4
@@ -55,4 +55,3 @@ GCONF_SCHEMAS+=		compiz-workarounds.schemas
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../wm/compiz/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
-

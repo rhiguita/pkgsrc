@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2013/04/06 13:09:25 rodent Exp $
+# $NetBSD: Makefile,v 1.7 2013/04/06 14:58:20 rodent Exp $
 #
 
 DISTNAME=	mailhops-1.4
@@ -35,4 +35,3 @@ do-install:
 
 
 .include "../../mk/bsd.pkg.mk"
-

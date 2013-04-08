@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2012/12/16 01:52:34 obache Exp $
+# $NetBSD: Makefile,v 1.15 2013/02/06 23:23:44 jperkin Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -20,4 +20,3 @@ PY_PATCHPLIST=	yes
 .include "../../security/lasso/buildlink3.mk"
 
 .include "../../security/lasso/Makefile.common"
-

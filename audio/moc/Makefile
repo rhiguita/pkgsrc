@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/12/16 01:51:59 obache Exp $
+# $NetBSD: Makefile,v 1.20 2013/02/06 23:21:41 jperkin Exp $
 
 DISTNAME=		moc-2.4.3
 PKGREVISION=		5
@@ -29,7 +29,7 @@ SUBST_MESSAGE.oss=	Fixing hardcoded audio device.
 
 .include "options.mk"
 ###
-### This target is [currently] for regenerating configure to add the 
+### This target is [currently] for regenerating configure to add the
 ### sched_get_priority_max check of librt.
 ###
 #USE_TOOLS+=		autoconf automake

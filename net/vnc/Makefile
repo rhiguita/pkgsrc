@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2012/11/08 10:58:07 sborrill Exp $
+# $NetBSD: Makefile,v 1.49 2013/02/28 01:21:56 jperkin Exp $
 
 DISTNAME=		vnc-3.3.3r2
 PKGNAME=		vnc-3.3.3.2
@@ -42,8 +42,8 @@ post-patch: patch-sockets
 .PHONY: patch-sockets
 patch-sockets:
 	cd ${WRKSRC} && ${PATCH} ${PATCH_ARGS} < ${FILESDIR}/patch-sockets.c
-.endif                
-                
+.endif
+
 # We have to frob a few things, and we want our own permissions, so it's easier
 # to do the install ourselves.
 

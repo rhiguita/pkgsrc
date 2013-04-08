@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2013/03/16 07:21:23 obache Exp $
+# $NetBSD: Makefile,v 1.7 2013/04/02 15:34:35 taca Exp $
 #
 
 DISTNAME=	contao-${CT_VERSION}
@@ -79,7 +79,7 @@ pre-configure:
 	${CP} ${FILESDIR}/contao.conf ${WRKDIR}
 
 pre-install:
-	cd ${WRKSRC}; ${RM} -fr files/music_academy templates/music_academy.sql 
+	cd ${WRKSRC}; ${RM} -fr files/music_academy templates/music_academy.sql
 	${FIND} ${WRKSRC} -name "*.orig*" -exec ${RM} -f {} \;
 
 do-install:
