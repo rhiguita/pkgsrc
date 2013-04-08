@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.12052 2013/04/08 08:27:43 mef Exp $
+$NetBSD: TODO,v 1.12054 2013/04/08 14:34:00 mef Exp $
 
 Suggested new packages
 ======================
@@ -1068,7 +1068,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o scilab-5.5.3
 	o scm-5e7
 	o scmcvs-1.12.13
-	o scmgit-1.8.2
 	o scribus-1.4.2
 	o scripts-1.0.1
 	o scrollz-1.9.99
@@ -1191,7 +1190,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o vala-0.20.0
 	o vbetool-1.1
 	o vera-1.17
-	o veusz-1.17
 	o vfu-4.09
 	o vicq-0.4.2
 	o viewvc-1.1.18

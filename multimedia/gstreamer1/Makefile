@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2012/12/15 07:41:27 marino Exp $
+# $NetBSD: Makefile,v 1.4 2013/03/15 18:34:47 drochner Exp $
 #
 
-DISTNAME=	gstreamer-1.0.5
+DISTNAME=	gstreamer-1.0.6
 PKGNAME=	${DISTNAME:S/gstreamer/gstreamer1/}
 CATEGORIES=	multimedia
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/gstreamer/
@@ -28,4 +28,5 @@ PKGCONFIG_OVERRIDE+=	pkgconfig/gstreamer.pc.in
 PKGCONFIG_OVERRIDE+=	pkgconfig/gstreamer-base.pc.in
 
 .include "../../devel/glib2/buildlink3.mk"
+.include "../../devel/gobject-introspection/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

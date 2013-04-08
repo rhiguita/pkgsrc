@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/12/18 12:31:31 jperkin Exp $
+# $NetBSD: Makefile,v 1.3 2013/04/06 03:45:19 rodent Exp $
 #
 .include "Makefile.common"
 
@@ -23,5 +23,6 @@ CFLAGS.SunOS+=		-DHAVE_FIONREAD_IN_SYS_FILIO=1
 # soft dependency only, .pc file not needed
 #.include "../../textproc/iso-codes/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
+.include "../../devel/gobject-introspection/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
