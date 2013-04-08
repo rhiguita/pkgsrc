@@ -2,9 +2,9 @@ $NetBSD: patch-aa,v 1.4 2007/05/29 12:25:03 martti Exp $
 
 Remove etc
 
---- configure.orig	2011-08-14 21:28:15.000000000 +0900
-+++ configure	2012-02-13 10:34:04.000000000 +0900
-@@ -2667,7 +2667,7 @@
+--- configure.orig	Sun Aug 14 12:28:15 2011
++++ configure
+@@ -2667,7 +2667,7 @@ host_libs="intl libiberty opcodes bfd readline tcl tk 
  # binutils, gas and ld appear in that order because it makes sense to run
  # "make check" in that particular order.
  # If --enable-gold is used, "gold" may replace "ld".
@@ -13,3 +13,12 @@ Remove etc
  
  # libgcj represents the runtime libraries only used by gcj.
  libgcj="target-libffi \
+@@ -14663,6 +14663,8 @@ do
+   case $ac_option in
+   # Handling of the options.
+   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
++	: Avoid regenerating within pkgsrc
++	exit 0
+     ac_cs_recheck=: ;;
+   --version | --versio | --versi | --vers | --ver | --ve | --v | -V )
+     $as_echo "$ac_cs_version"; exit ;;

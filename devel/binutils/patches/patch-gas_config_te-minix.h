@@ -1,6 +1,6 @@
 $NetBSD$
 
---- gas/config/te-minix.h.orig	Wed Aug 15 00:52:51 2012
+--- gas/config/te-minix.h.orig	Wed Apr 10 22:38:30 2013
 +++ gas/config/te-minix.h
 @@ -0,0 +1,11 @@
 +#define TE_MINIX 1

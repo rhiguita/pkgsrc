@@ -2,7 +2,7 @@ $NetBSD$
 
 Disable multilib.
 
---- libiberty/Makefile.in.orig	2011-07-22 14:37:58.000000000 +0000
+--- libiberty/Makefile.in.orig	Fri Jul 22 14:37:58 2011
 +++ libiberty/Makefile.in
 @@ -350,7 +350,6 @@ install-strip: install
  # multilib-specific flags, it's overridden by FLAGS_TO_PASS from the

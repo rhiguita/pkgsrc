@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.common,v 1.16 2012/06/02 11:54:38 cheusov Exp $
+@comment $NetBSD: PLIST.common,v 1.17 2012/07/23 12:24:34 jperkin Exp $
 ${MACHINE_GNU_PLATFORM}/bin/ar
 ${MACHINE_GNU_PLATFORM}/bin/as
 ${MACHINE_GNU_PLATFORM}/bin/ld
@@ -30,7 +30,7 @@ gnu/bin/as
 gnu/bin/c++filt
 ${PLIST.gprof}gnu/bin/gprof
 gnu/bin/elfedit
-gnu/bin/ld
+${PLIST.ld}gnu/bin/ld
 gnu/bin/ld.bfd
 gnu/bin/nm
 gnu/bin/objcopy
@@ -46,7 +46,7 @@ gnu/man/man1/as.1
 gnu/man/man1/c++filt.1
 gnu/man/man1/dlltool.1
 ${PLIST.gprof}gnu/man/man1/gprof.1
-gnu/man/man1/ld.1
+${PLIST.ld}gnu/man/man1/ld.1
 gnu/man/man1/elfedit.1
 gnu/man/man1/nlmconv.1
 gnu/man/man1/nm.1
@@ -127,6 +127,7 @@ ${PLIST.gprof}share/locale/id/LC_MESSAGES/gprof.mo
 share/locale/id/LC_MESSAGES/bfd.mo
 share/locale/id/LC_MESSAGES/binutils.mo
 share/locale/id/LC_MESSAGES/gas.mo
+share/locale/id/LC_MESSAGES/ld.mo
 share/locale/id/LC_MESSAGES/opcodes.mo
 share/locale/ja/LC_MESSAGES/bfd.mo
 share/locale/ja/LC_MESSAGES/binutils.mo
@@ -142,6 +143,7 @@ ${PLIST.gprof}share/locale/ro/LC_MESSAGES/gprof.mo
 share/locale/ro/LC_MESSAGES/opcodes.mo
 share/locale/ru/LC_MESSAGES/bfd.mo
 share/locale/ru/LC_MESSAGES/binutils.mo
+share/locale/ru/LC_MESSAGES/gas.mo
 ${PLIST.gprof}share/locale/ru/LC_MESSAGES/gprof.mo
 share/locale/rw/LC_MESSAGES/bfd.mo
 share/locale/rw/LC_MESSAGES/binutils.mo

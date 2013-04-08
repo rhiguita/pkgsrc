@@ -19,3 +19,12 @@ $NetBSD$
      i386linux_vec)		tb="$tb i386linux.lo aout32.lo" ;;
      i386lynx_aout_vec)		tb="$tb i386lynx.lo lynx-core.lo aout32.lo" ;;
      i386lynx_coff_vec)		tb="$tb cf-i386lynx.lo cofflink.lo lynx-core.lo" ;;
+@@ -16517,6 +16520,8 @@ do
+   case $ac_option in
+   # Handling of the options.
+   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
++	: Avoid regenerating within pkgsrc
++	exit 0
+     ac_cs_recheck=: ;;
+   --version | --versio | --versi | --vers | --ver | --ve | --v | -V )
+     $as_echo "$ac_cs_version"; exit ;;

@@ -2,9 +2,9 @@ $NetBSD$
 
 Remove etc
 
---- configure.ac.orig	2011-11-21 20:58:27.000000000 +0900
-+++ configure.ac	2012-02-13 10:34:17.000000000 +0900
-@@ -140,7 +140,7 @@
+--- configure.ac.orig	Mon Nov 21 11:58:27 2011
++++ configure.ac
+@@ -140,7 +140,7 @@ host_libs="intl libiberty opcodes bfd readline tcl tk 
  # binutils, gas and ld appear in that order because it makes sense to run
  # "make check" in that particular order.
  # If --enable-gold is used, "gold" may replace "ld".
