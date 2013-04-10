@@ -4,7 +4,6 @@
 COMMENT=	Cross-platform development utilities
 
 #SUBDIR+=	COMMON	# not a real package
-SUBDIR+=	arm-minix-binutils
 SUBDIR+=	atasm
 SUBDIR+=	avr-binutils
 SUBDIR+=	avr-gcc
