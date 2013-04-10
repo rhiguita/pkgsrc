@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2013/03/14 19:10:29 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2013/04/10 11:10:41 wiz Exp $
 
-DISTNAME=	harfbuzz-0.9.13
+DISTNAME=	harfbuzz-0.9.15
 CATEGORIES=	fonts
 MASTER_SITES=	http://www.freedesktop.org/software/harfbuzz/release/
 EXTRACT_SUFX=	.tar.bz2
@@ -17,6 +17,7 @@ USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake pkg-config
 GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE=	harfbuzz.pc.in
+CONFIGURE_ENV+=		ICU_CONFIG=no
 
 LDFLAGS.OpenBSD+=	-lz
 
