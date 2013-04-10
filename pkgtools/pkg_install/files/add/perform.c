@@ -878,64 +878,35 @@ pkg_register_depends(struct pkg_task *pkg)
 	free(text);
 }
 
-#ifdef __minix
-static int
-normalise_version(char *release, char *version)
-{
-	char actual_version[50];
-	int l1, l2;
-
-	if (release == NULL || version == NULL) {
-		warnx("release or version information not present");
-		return -1;
-	}
-
-	l1 = strlen(release);
-	l2 = strlen(version);
-
-	if (l1 + l2 + 2 >= sizeof(actual_version)) {
-		warnx("not enough space to normalise version");
-		return -1;
-	}
-
-	if (l1 > 0 && l2 > 0) {
-		snprintf(actual_version, sizeof(actual_version),
-			"%s.%s", release, version);
-	} else if (strlen(release) > 0) {
-		strncpy(actual_version, release, sizeof(actual_version)-1);
-	} else if (strlen(version) > 0) {
-		strncpy(actual_version, version, sizeof(actual_version)-1);
-	} else {
-		warnx("cannot determine version information");
-		return -1;
-	}
-
-	strcpy(release, actual_version);
-	version[0] = '\0';
-
-	return 0;
-}
-#endif
-
 /*
  * Reduce the result from uname(3) to a canonical form.
  */
 static int
 normalise_platform(struct utsname *host_name)
 {
-	int rc = 0;
-
 #ifdef NUMERIC_VERSION_ONLY
 	size_t span;
 
 	span = strspn(host_name->release, "0123456789.");
 	host_name->release[span] = '\0';
 #endif
-#ifdef __minix
-	rc = normalise_version(host_name->release, host_name->version);
-#endif
-	return rc;
 }
+
+#ifdef __minix
+/*
+ * Workaround the Minix interpretation of struct utsname fields.
+ * Combine release->"x" version->"y.z" into release->"x.y.z" for Minix x.y.z
+ */
+static void
+normalise_release(struct utsname *buf)
+{
+	char release[sizeof(buf->release)];
+	snprintf(release, sizeof(buf->release), "%s.%s", buf->release,
+								buf->version);
+	strncpy(buf->release, release, sizeof(buf->release));
+}
+#endif /* __minix */
+
 
 /*
  * Check build platform of the package against local host.
@@ -957,9 +928,11 @@ check_platform(struct pkg_task *pkg)
 		}
 	}
 
-	if (normalise_platform(&host_uname)) {
-		return -1;
-	}
+	normalise_platform(&host_uname);
+
+#ifdef __minix
+	normalise_release(&host_uname);
+#endif /* __minix */
 
 	if (OverrideMachine != NULL)
 		effective_arch = OverrideMachine;
