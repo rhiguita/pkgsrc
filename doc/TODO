@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.12068 2013/04/10 15:20:00 drochner Exp $
+$NetBSD: TODO,v 1.12072 2013/04/11 09:39:06 khorben Exp $
 
 Suggested new packages
 ======================
@@ -398,8 +398,8 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o arping-2.13
 	o asapm-3.1
 	o asc-2.5.0
-	o aspell-faroese-0.4.0
-	o aspell-norwegian-2.0.10
+	o aspell-fo-0.4.0
+	o aspell-nb-2.0.10
 	o astyle-1.15.3
 	o asymptote-2.21
 	o atari800-3.0.0
@@ -838,7 +838,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o luit-2.0.20130217
 	o lwm-1.2.2
 	o lyx-2.0.3
-	o lzip-1.14
 	o maelstrom-sdl-3.0.6
 	o maelstrom-x11-2.0.7
 	o mailgraph-1.14
@@ -1058,7 +1057,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o scilab-5.5.3
 	o scm-5e7
 	o scmcvs-1.12.13
-	o scribus-1.4.2
 	o scripts-1.0.1
 	o scrollz-1.9.99
 	o scrotwm-0.11.0
@@ -1087,7 +1085,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o snd-10.6
 	o snes9x-1.53
 	o snort-2.9.4.1
-	o socat-1.7.2.1 [security]
 	o solfege-3.20.7
 	o sope-4.6
 	o sound-juicer-2.32.0
