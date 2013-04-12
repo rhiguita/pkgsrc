@@ -1,3 +1,4 @@
+@comment $NetBSD$
 ${MACHINE_GNU_PLATFORM}/lib/ldscripts/elf_k1om.x
 ${MACHINE_GNU_PLATFORM}/lib/ldscripts/elf_k1om.xbn
 ${MACHINE_GNU_PLATFORM}/lib/ldscripts/elf_k1om.xc

@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.1278 2013/04/12 00:01:59 rodent Exp $
+$NetBSD: CHANGES-2013,v 1.1301 2013/04/12 14:41:21 schmonz Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -2036,3 +2036,32 @@ Changes to the packages collection and infrastructure in 2013:
 	Added textproc/aspell-ml version 0.03.1 [rodent 2013-04-11]
 	Added textproc/aspell-mn version 0.06.2 [rodent 2013-04-12]
 	Added textproc/aspell-mr version 0.10.0 [rodent 2013-04-12]
+	Updated print/hplip to 3.13.4 [schnoebe 2013-04-12]
+	Updated lang/python27 to 2.7.4 [adam 2013-04-12]
+	Added textproc/aspell-mt version 0.50.0 [rodent 2013-04-12]
+	Added textproc/aspell-nn version 0.50.1.1 [rodent 2013-04-12]
+	Added textproc/aspell-ny version 0.01.0 [rodent 2013-04-12]
+	Added textproc/aspell-or version 0.03.1 [rodent 2013-04-12]
+	Added textproc/aspell-pa version 0.01.1 [rodent 2013-04-12]
+	Added textproc/aspell-pt_BR version 20090702.0 [rodent 2013-04-12]
+	Added textproc/aspell-qu version 0.02.0 [rodent 2013-04-12]
+	Added textproc/aspell-rw version 0.50.0 [rodent 2013-04-12]
+	Added textproc/aspell-sc version 1.0 [rodent 2013-04-12]
+	Added textproc/aspell-sl version 0.50.0 [rodent 2013-04-12]
+	Added textproc/aspell-sr version 0.02 [rodent 2013-04-12]
+	Updated devel/libtool to 2.4.2 [joerg 2013-04-12]
+	Updated devel/libtool-base to 2.4.2 [joerg 2013-04-12]
+	Updated devel/libtool-info to 2.4.2 [joerg 2013-04-12]
+	Updated devel/libltdl to 2.4.2 [joerg 2013-04-12]
+	Updated devel/libebml to 1.3.0 [drochner 2013-04-12]
+	Updated multimedia/libmatroska to 1.4.0 [drochner 2013-04-12]
+	Updated multimedia/vlc2 to 2.0.6 [drochner 2013-04-12]
+	Added devel/p5-Env-Path version 0.18 [schmonz 2013-04-12]
+	Added devel/p5-Test-Dir version 1.014 [schmonz 2013-04-12]
+	Added devel/p5-Test-File version 1.34 [schmonz 2013-04-12]
+	Added devel/p5-Git-Wrapper version 0.028 [schmonz 2013-04-12]
+	Added devel/p5-MouseX-NativeTraits version 1.09 [schmonz 2013-04-12]
+	Added devel/p5-MouseX-Types-Path-Class version 0.07 [schmonz 2013-04-12]
+	Added databases/p5-App-Sqitch version 0.961 [schmonz 2013-04-12]
+	Updated lang/php53 to 5.3.24 [taca 2013-04-12]
+	Updated lang/php54 to 5.4.14 [taca 2013-04-12]
