@@ -1,18 +1,18 @@
-# $NetBSD: Makefile,v 1.1 2013/04/11 11:09:46 rodent Exp $
+# $NetBSD$
 #
 
-DISTNAME=	aspell6-hi-0.02-0
+DISTNAME=	aspell6-mr-0.10-0
 PKGNAME=	${DISTNAME:S/6-/-/1:S/-0$/.0/1}
 CATEGORIES=	textproc
-MASTER_SITES=	${MASTER_SITE_GNU:=aspell/dict/hi/}
+MASTER_SITES=	${MASTER_SITE_GNU:=aspell/dict/mr/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	rodent@NetBSD.org
-HOMEPAGE=	http://oriya.sarovar.org/hi-dict.html
-COMMENT=	Hindi language support for aspell
+HOMEPAGE=	http://www.janabhaaratii.org.in/
+COMMENT=	Marathi language support for aspell
 LICENSE=	gnu-gpl-v2
 
-CONFLICTS+=	aspell-mr-[0-9]*
+CONFLICTS+=	aspell-hi-[0-9]*
 
 HAS_CONFIGURE=	yes
 USE_LANGUAGES=	# none
