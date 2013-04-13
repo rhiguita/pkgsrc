@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2013/01/26 21:37:31 adam Exp $
+# $NetBSD: Makefile,v 1.39 2013/02/16 11:21:06 wiz Exp $
 #
 
 DISTNAME=	emulator_src_${POSE_VERSION}
@@ -10,7 +10,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		emulator-skins-19.tar.gz
 
 MAINTAINER=	dsainty@NetBSD.org
-HOMEPAGE=	http://www.palmos.com/dev/tools/emulator/
+#HOMEPAGE=	http://www.palmos.com/dev/tools/emulator/
 COMMENT=	Palm OS Emulator
 #LICENSE=       GPL
 
