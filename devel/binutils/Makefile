@@ -102,7 +102,7 @@ post-install:
 .if ${OPSYS} == "Minix"
 	set -e; \
 	if [ -f ${DESTDIR}${PREFIX}/bin/g${f:Q} ]; then \
-	    ${LN} -sf ${PREFIX}/bin/g${f} ${DESTDIR}${PREFIX}/bin/${f}; \
+	    ${LN} -sf g${f} ${DESTDIR}${PREFIX}/bin/${f}; \
 	fi
 .endif
 	if [ -f ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/g${f:Q}.1 ]; then \
