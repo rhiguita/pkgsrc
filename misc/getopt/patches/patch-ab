@@ -11,7 +11,7 @@ $NetBSD$
  bindir=$(prefix)/bin
  mandir=$(prefix)/man
  man1dir=$(mandir)/man1
-@@ -10,7 +10,7 @@ getoptdir=$(sharedir)/getopt
+@@ -10,10 +10,10 @@ getoptdir=$(sharedir)/getopt
  localedir=$(sharedir)/locale
  
  # Define this to 0 to use the getopt(3) routines in this package.
@@ -19,7 +19,11 @@ $NetBSD$
 +LIBCGETOPT=0
  
  # Define this to 1 if you do not have the gettext routines
- WITHOUT_GETTEXT=0
+-WITHOUT_GETTEXT=0
++WITHOUT_GETTEXT=1
+ 
+ # For creating the archive
+ PACKAGE=getopt
 @@ -23,8 +23,6 @@ UNLIKELYNAME=a8vwjfd92
  
  SHELL=/bin/sh
@@ -39,12 +43,3 @@ $NetBSD$
  
  sources=getopt.c
  ifeq ($(LIBCGETOPT),0)
-@@ -61,7 +58,7 @@ clean: clean_po
- 	-$(RM) $(objects) $(binaries) 
- 
- getopt: $(objects)
--	$(CC) $(LDFLAGS) -o $@ $(objects)
-+	$(CC) $(LDFLAGS) -o $@ $(objects) -lintl
- 
- install: getopt install_po
- 	$(INSTALL) -m 755 -d $(DESTDIR)$(bindir) $(DESTDIR)$(man1dir)
