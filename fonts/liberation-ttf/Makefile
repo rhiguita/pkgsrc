@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2012/10/03 18:28:26 asau Exp $
+# $NetBSD: Makefile,v 1.10 2013/04/08 01:42:40 rodent Exp $
 #
 
-DISTNAME=	liberation-fonts-ttf-2.00.0
+DISTNAME=	liberation-fonts-ttf-2.00.1
 PKGNAME=	${DISTNAME:S/-fonts//}
 CATEGORIES=	fonts
 MASTER_SITES=	https://fedorahosted.org/releases/l/i/liberation-fonts/ \
