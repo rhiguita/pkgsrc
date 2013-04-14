@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.679 2013/02/11 09:16:11 wiz Exp $
+# $NetBSD: Makefile,v 1.683 2013/04/14 02:43:45 rodent Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -209,10 +209,10 @@ SUBDIR+=	kde4-l10n-fr
 SUBDIR+=	kde4-l10n-ga
 SUBDIR+=	kde4-l10n-gl
 SUBDIR+=	kde4-l10n-he
+SUBDIR+=	kde4-l10n-hi
 SUBDIR+=	kde4-l10n-hr
 SUBDIR+=	kde4-l10n-hu
 SUBDIR+=	kde4-l10n-ia
-SUBDIR+=	kde4-l10n-id
 SUBDIR+=	kde4-l10n-is
 SUBDIR+=	kde4-l10n-it
 SUBDIR+=	kde4-l10n-ja
@@ -221,6 +221,7 @@ SUBDIR+=	kde4-l10n-km
 SUBDIR+=	kde4-l10n-ko
 SUBDIR+=	kde4-l10n-lt
 SUBDIR+=	kde4-l10n-lv
+SUBDIR+=	kde4-l10n-mr
 SUBDIR+=	kde4-l10n-nb
 SUBDIR+=	kde4-l10n-nds
 SUBDIR+=	kde4-l10n-nl
@@ -235,6 +236,7 @@ SUBDIR+=	kde4-l10n-si
 SUBDIR+=	kde4-l10n-sk
 SUBDIR+=	kde4-l10n-sl
 SUBDIR+=	kde4-l10n-sr
+SUBDIR+=	kde4-l10n-sv
 SUBDIR+=	kde4-l10n-tg
 SUBDIR+=	kde4-l10n-th
 SUBDIR+=	kde4-l10n-tr

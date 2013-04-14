@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.204 2013/04/03 11:17:17 markd Exp $
+# $NetBSD: Makefile,v 1.205 2013/04/03 12:25:23 markd Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -118,6 +118,7 @@ SUBDIR+=	libquicktime
 SUBDIR+=	libtheora
 SUBDIR+=	libtheora-docs
 SUBDIR+=	libva
+SUBDIR+=	libva-driver-vdpau
 SUBDIR+=	libvdpau
 SUBDIR+=	libvpx
 SUBDIR+=	lsdvd
