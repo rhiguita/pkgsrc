@@ -1,4 +1,4 @@
-# $NetBSD: mozilla-common.mk,v 1.45 2013/03/30 20:03:08 ryoon Exp $
+# $NetBSD: mozilla-common.mk,v 1.46 2013/03/30 20:46:29 tron Exp $
 #
 # common Makefile fragment for mozilla packages based on gecko 2.0.
 #
@@ -79,7 +79,7 @@ SUBST_SED.python+=	-e 's,<!(python,<!(${PYTHONBIN},'
 BUILD_DEPENDS+=		yasm>=1.1.0:../../devel/yasm
 CONFIGURE_ARGS+=	--enable-libjpeg-turbo
 .else
-CONFIGURE_ARGS+=	--diable-libjpeg-turbo
+CONFIGURE_ARGS+=	--disable-libjpeg-turbo
 .endif
 
 #
