@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2013/02/06 23:22:09 jperkin Exp $
+# $NetBSD: Makefile,v 1.18 2013/03/28 21:22:57 joerg Exp $
 #
 
 VERS=			1.7.6
@@ -21,6 +21,11 @@ USE_LANGUAGES=		c
 .if ${OPSYS} == "DragonFly"
 BUILDLINK_TRANSFORM+=	rm:-lresolv
 .endif
+
+SUBST_CLASSES+=		rpath-flg
+SUBST_STAGE.rpath-flg=	pre-configure
+SUBST_FILES.rpath-flg=	Source/setup_configure.py
+SUBST_SED.rpath-flg=	-e 's|-Wl,--rpath|${COMPILER_RPATH_FLAG}|g'
 
 .include "../../devel/subversion-base/buildlink3.mk"
 .include "../../lang/python/egg.mk"
