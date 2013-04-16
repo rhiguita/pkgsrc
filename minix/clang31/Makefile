@@ -48,7 +48,6 @@ CONFLICTS+= clang-[0-9]*
 MAINTAINER=	ben@minix3.org
 HOMEPAGE=	http://llvm.org/
 COMMENT=	c compiler: llvm, clang
-DEPENDS+=       binutils>=2.17nb3:../../devel/binutils
 DEPENDS+=       compiler-rt>=3.1:../../minix/compiler-rt
 
 PKG_DESTDIR_SUPPORT=destdir
@@ -62,7 +61,7 @@ USE_LIBTOOL=	yes
 
 CONFIGURE_ARGS=	--enable-bindings=none	# no OCaml, please!
 
-INSTALLATION_DIRS=	bin lib libexec
+INSTALLATION_DIRS=	bin lib libexec lib/bfd-plugins
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "Minix"
@@ -70,6 +69,7 @@ CONFIGURE_ARGS+= --disable-threads
 CONFIGURE_ARGS+= --enable-optimized
 CONFIGURE_ARGS+= --disable-assertions
 CONFIGURE_ARGS+= --enable-shared
+CONFIGURE_ARGS+= --with-binutils-include=/usr/pkg/include
 .else
 # This should be changed!
 CONFIGURE_ARGS+= --enable-targets=host-only
@@ -102,12 +102,14 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/scanview.css ${DESTDIR}${PREFIX}/share	
 	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/sorttable.js ${DESTDIR}${PREFIX}/share	
 	touch ${DESTDIR}/${PREFIX}/bin/clang.dynok
+	cp ${DESTDIR}${PREFIX}/lib/LLVMgold.so ${DESTDIR}${PREFIX}/lib/bfd-plugins/
 
 WRKSRC=			${WRKDIR}/llvm
 
 MAKE_ENV+= WRAPPER_REORDER=no
 WRAPPER_REORDER=no
 
+.include "../../devel/binutils/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
