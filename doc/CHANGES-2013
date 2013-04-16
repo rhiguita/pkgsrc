@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.1383 2013/04/15 15:42:53 adam Exp $
+$NetBSD: CHANGES-2013,v 1.1387 2013/04/15 22:34:01 prlw1 Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -2172,3 +2172,9 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated databases/sqlite3-docs to 3.7.16.2 [adam 2013-04-15]
 	Updated databases/sqlite3-tcl to 3.7.16.2 [adam 2013-04-15]
 	Added fonts/ubuntu-fonts version 0.80 [uwe 2013-04-15]
+	Updated databases/pgbuildfarm to 4.10 [gls 2013-04-15]
+	Updated devel/bison to 2.7.1 [adam 2013-04-15]
+	Updated parallel/hwloc to 1.7 [adam 2013-04-15]
+	Updated parallel/mpi-ch to 3.0.3 [adam 2013-04-15]
+	Updated graphics/png to 1.6.2beta01 [prlw1 2013-04-15]
+	Updated geography/viking to 1.4.1 [gdt 2013-04-16]

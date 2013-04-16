@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.18 2013/03/17 17:08:51 asau Exp $
 bin/hydra_nameserver
 bin/hydra_persist
 bin/hydra_pmi_proxy
@@ -21,6 +21,7 @@ lib/libfmpich.la
 lib/libmpich.la
 lib/libmpichcxx.la
 lib/libmpl.la
+lib/libpmpich.la
 lib/pkgconfig/mpich.pc
 man/man1/mpicc.1
 man/man1/mpicxx.1
