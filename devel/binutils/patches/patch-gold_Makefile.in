@@ -1,0 +1,22 @@
+$NetBSD$
+
+--- gold/Makefile.in.orig	Wed Sep 14 01:29:01 2011
++++ gold/Makefile.in
+@@ -334,7 +334,7 @@ install_sh = @install_sh@
+ installed_linker = @installed_linker@
+ libdir = @libdir@
+ libexecdir = @libexecdir@
+-localedir = @localedir@
++localedir = /usr/pkg/share/locale
+ localstatedir = @localstatedir@
+ mandir = @mandir@
+ mkdir_p = @mkdir_p@
+@@ -368,7 +368,7 @@ AM_CPPFLAGS = \
+ 	@INCINTL@
+ 
+ LIBIBERTY = ../libiberty/libiberty.a
+-@PLUGINS_TRUE@LIBDL = -ldl
++@PLUGINS_TRUE@LIBDL = -dynamic-linker=/libexec/ld.elf_so
+ @THREADS_TRUE@THREADSLIB = -lpthread
+ AM_YFLAGS = -d
+ 

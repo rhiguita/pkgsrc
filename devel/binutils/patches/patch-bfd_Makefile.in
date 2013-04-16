@@ -1,0 +1,22 @@
+$NetBSD$
+
+--- bfd/Makefile.in.orig	Mon Nov 21 11:55:49 2011
++++ bfd/Makefile.in
+@@ -291,7 +291,7 @@ infodir = @infodir@
+ install_sh = @install_sh@
+ libdir = @libdir@
+ libexecdir = @libexecdir@
+-localedir = @localedir@
++localedir = /usr/pkg/share/locale
+ localstatedir = @localstatedir@
+ mandir = @mandir@
+ mkdir_p = @mkdir_p@
+@@ -336,7 +336,7 @@ libbfd_la_LDFLAGS = $(am__append_1) -release `cat libt
+ @INSTALL_LIBBFD_FALSE@noinst_LTLIBRARIES = libbfd.la
+ AM_CFLAGS = $(WARN_CFLAGS)
+ AM_CPPFLAGS = -DBINDIR='"$(bindir)"'
+-@PLUGINS_TRUE@LIBDL = -ldl
++@PLUGINS_TRUE@LIBDL = -dynamic-linker=/libexec/ld.elf_so
+ 
+ # bfd.h goes here, for now
+ BFD_H = bfd.h

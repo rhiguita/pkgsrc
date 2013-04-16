@@ -3,7 +3,8 @@ $NetBSD: distinfo,v 1.10 2011/08/22 08:51:46 wiz Exp $
 SHA1 (binutils-2.22.tar.bz2) = 65b304a0b9a53a686ce50a01173d1f40f8efe404
 RMD160 (binutils-2.22.tar.bz2) = 34cebe4cdca9480d5dc6f6b00b052c48c8ac30dc
 Size (binutils-2.22.tar.bz2) = 19973532 bytes
-SHA1 (patch-aa) = 37fe75c1fbf2ba48a323e0f0186dc20c3925c98e
+SHA1 (patch-aa) = 8eb9ac813686affd3450ba5885bb49ee79836fbd
+SHA1 (patch-bfd_Makefile.in) = badbe46ad0f72c9af5bec9b5d8b24b7d5ac44501
 SHA1 (patch-bfd_config.bfd) = 204606bd5bb5031edad2b8d387b52cace702593c
 SHA1 (patch-bfd_configure) = b732d1391453379ba90ffffd7d5d7010f4b68ad2
 SHA1 (patch-bfd_configure.in) = 460e136857acbafe75fb9ceef6ccf5fc700ef844
@@ -15,6 +16,7 @@ SHA1 (patch-gas_config_tc-i386.h) = 3dceaadda6634e22b050234a07fc987427bccfce
 SHA1 (patch-gas_config_te-minix.h) = a4d6cfb15930c94b6e7a6e57b0eeb5f099453a15
 SHA1 (patch-gas_configure) = a2a72bbfa58d0a55b5dcb96f44a8e063a8c49e0b
 SHA1 (patch-gas_configure.tgt) = 8ce3db003fcfc2db2912a30d61f97585d529cd02
+SHA1 (patch-gold_Makefile.in) = bc15fae95e0a582bc4a69970fd28aa03fb3b1981
 SHA1 (patch-ld_Makefile.in) = e6b5db01dcd854735d4df1f6aa614cf8a3f57664
 SHA1 (patch-ld_configure.tgt) = 506bd4188de00b4852ee9221f517d25d8a39b9a9
 SHA1 (patch-ld_emulparams_elf__i386__minix.sh) = 8a5f6bbfe83c4e41549fb9737c24aaa7979a1611

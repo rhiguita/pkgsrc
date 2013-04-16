@@ -51,9 +51,13 @@ EXTRA_FILES+=	ld
 
 .if ${OPSYS} == "Minix"
 CONFIGURE_ARGS+= \
-	--with-sysroot \
+	--with-sysroot=/ \
+	--enable-gold=yes \
 	--enable-ld=default \
+	--enable-plugins \
 	--enable-lto
+
+DEPENDS+=	bison>=2.5nb1:../../devel/bison
 
 GENERATE_PLIST+=	for x in ${SYMLINK_FILES}; do if [ -f "${DESTDIR}${PREFIX}/bin/g$$x" ]; then ${ECHO} bin/$$x; fi; done;
 

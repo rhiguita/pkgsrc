@@ -16,6 +16,7 @@ ${PLIST.gprof}bin/ggprof
 bin/gelfedit
 bin/gld
 bin/gld.bfd
+bin/gld.gold
 bin/gnm
 bin/gobjcopy
 bin/gobjdump
@@ -64,6 +65,7 @@ include/bfd.h
 include/bfdlink.h
 include/dis-asm.h
 include/symcat.h
+include/plugin-api.h
 info/as.info
 info/bfd.info
 info/binutils.info
