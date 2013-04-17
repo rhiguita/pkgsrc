@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.118 2013/01/05 20:38:27 is Exp $
+# $NetBSD: Makefile,v 1.119 2013/03/05 20:05:57 pettai Exp $
 #
 
 COMMENT=	Document format and character code converters
@@ -23,6 +23,7 @@ SUBDIR+=	dvi2tty
 SUBDIR+=	enriched2html
 SUBDIR+=	fondu
 SUBDIR+=	fribidi
+SUBDIR+=	gbase
 SUBDIR+=	help2man
 SUBDIR+=	hztty
 SUBDIR+=	ish

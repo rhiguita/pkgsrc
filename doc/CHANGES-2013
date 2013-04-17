@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.1391 2013/04/16 15:46:07 wiz Exp $
+$NetBSD: CHANGES-2013,v 1.1395 2013/04/17 00:55:49 rodent Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -2183,3 +2183,7 @@ Changes to the packages collection and infrastructure in 2013:
 	Added games/pushover version 0.0.4 [wiz 2013-04-16]
 	Updated math/glpk to 4.49 [adam 2013-04-16]
 	Updated converters/help2man to 1.41.2 [adam 2013-04-16]
+	Added devel/ucommon version 6.0.3 [rodent 2013-04-17]
+	Added net/ccrtp version 2.0.5 [rodent 2013-04-17]
+	Added net/libzrtpcpp version 2.3.2 [rodent 2013-04-17]
+	Added converters/gbase version 0.5 [rodent 2013-04-17]

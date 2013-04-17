@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.959 2013/03/24 15:19:54 drochner Exp $
+# $NetBSD: Makefile,v 1.960 2013/04/10 11:01:22 drochner Exp $
 #
 
 COMMENT=	Networking tools
@@ -59,6 +59,7 @@ SUBDIR+=	bug-buddy
 SUBDIR+=	bwping
 SUBDIR+=	cacti
 SUBDIR+=	calypso
+SUBDIR+=	ccrtp
 SUBDIR+=	cdpd
 SUBDIR+=	cftp
 SUBDIR+=	chimera
@@ -265,6 +266,7 @@ SUBDIR+=	libtorrent
 SUBDIR+=	libtrace
 SUBDIR+=	libupnp
 SUBDIR+=	libvncserver
+SUBDIR+=	libzrtpcpp
 SUBDIR+=	linc
 SUBDIR+=	llnlxdir
 SUBDIR+=	llnlxftp
