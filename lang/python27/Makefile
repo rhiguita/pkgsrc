@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2013/04/12 09:03:41 adam Exp $
+# $NetBSD: Makefile,v 1.24 2013/04/13 12:55:53 obache Exp $
 
 .include "dist.mk"
 
@@ -18,6 +18,7 @@ CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	OPT=${CFLAGS:Q}
 CONFIGURE_ARGS+=	--with-system-ffi
 CONFIGURE_ARGS+=	--with-dbmliborder=ndbm:bdb
+CONFIGURE_ENV+=		MKDIR_P=${MKDIR:Q}
 
 LDFLAGS+=		-L${WRKSRC}
 
