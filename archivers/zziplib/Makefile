@@ -19,6 +19,9 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
 CONFIGURE_ARGS+=	--disable-builddir
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	--disable-mmap
+.endif
 
 BUILD_DIRS=	zzip zzipwrap bins
 
