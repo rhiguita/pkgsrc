@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.47 2009/03/20 19:24:36 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.48 2012/04/08 05:59:25 obache Exp $
 
 BUILDLINK_TREE+=	MesaLib
 
@@ -19,7 +19,7 @@ BUILDLINK_LDFLAGS.MesaLib+=	-Wl,-dylib_file,/System/Library/Frameworks/OpenGL.fr
 pkgbase:= MesaLib
 .include "../../mk/pkg-build-options.mk"
 
-.if ${X11_TYPE} == "native" && exists(${X11BASE}/lib/pkgconfig/dri.pc)
+.if ${X11_TYPE} == "native" && exists(${X11BASE}/lib/pkgconfig/dri.pc) && ${OPSYS} != "Cygwin"
 PKG_BUILD_OPTIONS.MesaLib+=	dri
 .endif
 

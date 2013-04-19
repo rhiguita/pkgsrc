@@ -1,5 +1,6 @@
-$NetBSD$
+$NetBSD: patch-SA53061_1,v 1.1 2013/04/18 10:17:42 drochner Exp $
 
+CVE-2013-1969
 upstream commit de0cc20c29cb3f056062925395e0f68d2250a46f
 
 --- HTMLparser.c.orig	2012-09-11 04:23:25.000000000 +0000
