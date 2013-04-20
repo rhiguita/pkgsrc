@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.25 2013/01/21 11:49:18 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2013/04/06 03:59:24 rodent Exp $
 #
 
-PKGNAME=	${PYPKGPREFIX}-readline-0
-PKGREVISION=	5
+PKGNAME=	${PYPKGPREFIX}-readline-${PY_DISTVERSION}
 CATEGORIES=	devel misc python
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
