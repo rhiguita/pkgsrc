@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.29 2013/02/16 11:21:43 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2013/03/15 19:14:05 drochner Exp $
 
-DISTNAME=	darktable-1.1.3
+DISTNAME=	darktable-1.2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=darktable/}
+EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://darktable.sourceforge.net/
+HOMEPAGE=	http://www.darktable.org/
 COMMENT=	Photography workflow application
 LICENSE=	gnu-gpl-v3
 

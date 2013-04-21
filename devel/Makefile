@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1731 2013/04/17 00:52:07 rodent Exp $
+# $NetBSD: Makefile,v 1.1734 2013/04/21 11:50:02 ryoon Exp $
 #
 
 COMMENT=	Development utilities
@@ -884,6 +884,7 @@ SUBDIR+=	p5-Log-Dispatch-Array
 SUBDIR+=	p5-Log-Dispatch-Config
 SUBDIR+=	p5-Log-Dispatch-DBI
 SUBDIR+=	p5-Log-Dispatch-FileRotate
+SUBDIR+=	p5-Log-Dispatch-Perl
 SUBDIR+=	p5-Log-Dispatchouli
 SUBDIR+=	p5-Log-Handler
 SUBDIR+=	p5-Log-Log4perl
@@ -1054,6 +1055,7 @@ SUBDIR+=	p5-PerlIO-gzip
 SUBDIR+=	p5-PerlIO-via-Bzip2
 SUBDIR+=	p5-PerlIO-via-dynamic
 SUBDIR+=	p5-PerlIO-via-symlink
+SUBDIR+=	p5-Pod-Usage
 SUBDIR+=	p5-Probe-Perl
 SUBDIR+=	p5-Proc-Background
 SUBDIR+=	p5-Proc-Daemon
@@ -1425,6 +1427,7 @@ SUBDIR+=	rsltc
 SUBDIR+=	rt-mysql
 SUBDIR+=	rt-pgsql
 SUBDIR+=	rt3
+SUBDIR+=	rt4
 SUBDIR+=	rubigen
 SUBDIR+=	ruby-SDL
 SUBDIR+=	ruby-abstract
