@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/06/01 15:47:18 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2013/04/10 09:18:59 tonnerre Exp $
 
 DISTNAME=	io-console-0.4.2
 CATEGORIES=	devel
@@ -6,6 +6,8 @@ CATEGORIES=	devel
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	https://github.com/nobu/io-console
 COMMENT=	Add console capabilities to IO instances
+
+RUBY_VERSION_SUPPORTED=	193
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"
