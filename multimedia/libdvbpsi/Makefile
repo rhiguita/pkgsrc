@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2013/01/21 14:41:27 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2013/02/26 11:27:28 joerg Exp $
 
-DISTNAME=	libdvbpsi-1.0.0
+DISTNAME=	libdvbpsi-1.1.0
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.videolan.org/pub/libdvbpsi/${PKGVERSION_NOREV}/
 EXTRACT_SUFX=	.tar.bz2
