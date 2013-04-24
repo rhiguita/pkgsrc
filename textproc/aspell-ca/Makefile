@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2013/04/09 02:33:36 rodent Exp $
 #
 
 DISTNAME=	aspell6-ca-20040130-1
@@ -11,6 +11,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://aspell.net/
 COMMENT=	Catalan language support for aspell
 
+CONFLICTS+=	aspell-catalan-[0-9]*
 HAS_CONFIGURE=	yes
 
 .include "../../textproc/aspell/buildlink3.mk"

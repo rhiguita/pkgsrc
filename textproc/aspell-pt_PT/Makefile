@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2013/04/09 02:35:05 rodent Exp $
 #
 
 DISTNAME=	aspell6-pt_PT-20070510-0
@@ -11,6 +11,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://aspell.net/
 COMMENT=	Portuguese language support for aspell
 
+CONFLICTS+=	aspell-portuguese-[0-9]*
 HAS_CONFIGURE=	yes
 
 .include "../../textproc/aspell/buildlink3.mk"

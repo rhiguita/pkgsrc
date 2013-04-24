@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2013/04/09 02:33:41 rodent Exp $
 #
 
 DISTNAME=	aspell-eo-0.50-2
@@ -11,6 +11,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://aspell.net/
 COMMENT=	Esperanto language support for aspell
 
+CONFLICTS+=	aspell-esperanto-[0-9]*
 HAS_CONFIGURE=	yes
 
 .include "../../textproc/aspell/buildlink3.mk"
