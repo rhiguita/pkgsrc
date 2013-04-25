@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1735 2013/04/21 14:00:08 ryoon Exp $
+# $NetBSD: Makefile,v 1.1736 2013/04/24 13:35:26 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -294,6 +294,7 @@ SUBDIR+=	javacc
 SUBDIR+=	javadeps
 SUBDIR+=	jenkins
 SUBDIR+=	jflex
+SUBDIR+=	jq
 SUBDIR+=	js2-mode
 SUBDIR+=	js_of_ocaml
 SUBDIR+=	kdbg

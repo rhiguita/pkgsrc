@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.1498 2013/04/24 20:01:21 adam Exp $
+$NetBSD: CHANGES-2013,v 1.1505 2013/04/25 13:33:18 ryoon Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -2312,3 +2312,11 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated lang/gcc47 to 4.7.3 [adam 2013-04-24]
 	Updated lang/gcc47-libs to 4.7.3nb1 [adam 2013-04-24]
 	Updated databases/phpmyadmin to 3.5.8.1 [tron 2013-04-24]
+	Updated sysutils/hal to 0.5.14nb10 [sbd 2013-04-25]
+	Added devel/jq version 1.1 [jperkin 2013-04-25]
+	Updated math/ruby-spreadsheet to 0.8.5 [obache 2013-04-25]
+	Updated www/nginx to 1.4.0 [imil 2013-04-25]
+	Updated www/nginx to 1.4.0nb1 [imil 2013-04-25]
+	Updated lang/sun-jre6 to 6.0.45 [ryoon 2013-04-25]
+	Updated lang/sun-jdk6 to 6.0.45 [ryoon 2013-04-25]
+	Updated www/apache-tomcat7 to 7.0.39 [ryoon 2013-04-25]

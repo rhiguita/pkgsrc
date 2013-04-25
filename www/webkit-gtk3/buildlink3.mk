@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2013/01/26 21:36:51 adam Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2013/02/16 11:18:14 wiz Exp $
 
 BUILDLINK_TREE+=	webkit-gtk3
 
@@ -21,6 +21,7 @@ BUILDLINK_PKGSRCDIR.webkit-gtk3?=	../../www/webkit-gtk3
 .include "../../textproc/icu/buildlink3.mk"
 .include "../../textproc/libxslt/buildlink3.mk"
 .include "../../x11/gtk3/buildlink3.mk"
+.include "../../x11/libXdamage/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .endif # WEBKIT_GTK3_BUILDLINK3_MK
 
