@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2013/02/09 22:11:42 ryoon Exp $
+# $NetBSD: Makefile,v 1.21 2013/02/16 11:23:54 wiz Exp $
 
 DISTNAME=	ktorrent-${KTORRENT_VER}
 PKGREVISION=	22
@@ -8,7 +8,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 KTORRENT_VER=	2.2.8
 
-MAINTAINER=	shattered@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ktorrent.org/
 COMMENT=	Graphical BitTorrent client for KDE
 LICENSE=	gnu-gpl-v2

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2013/04/03 10:51:49 markd Exp $
+# $NetBSD: Makefile,v 1.20 2013/04/13 23:05:36 markd Exp $
 
 DISTNAME=	kde-runtime-${_KDE_VERSION}
 PKGNAME=	${DISTNAME:S/-4/4-4/}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11
 COMMENT=	Runtime requirements for the KDE integrated X11 desktop
 
@@ -19,6 +19,7 @@ DEPENDS+=	oxygen-icons-[0-9]*:../../graphics/oxygen-icons
 
 USE_TOOLS+=		gmake
 
+.include "../../mk/bsd.prefs.mk"
 .include "options.mk"
 
 # Some files are conditional on 'md5sum' or 'md5' being present.

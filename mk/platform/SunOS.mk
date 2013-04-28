@@ -1,4 +1,4 @@
-# $NetBSD: SunOS.mk,v 1.48 2013/02/01 12:36:06 hans Exp $
+# $NetBSD: SunOS.mk,v 1.49 2013/03/01 16:58:51 jperkin Exp $
 #
 # Variable definitions for the SunOS/Solaris operating system.
 
@@ -82,6 +82,8 @@ _OPSYS_SYSTEM_RPATH?=	/lib/64:/usr/lib/64
 .else
 _OPSYS_SYSTEM_RPATH?=	/lib:/usr/lib
 .endif
+_OPSYS_LIB_DIRS?=	/lib${LIBABISUFFIX} /usr/lib${LIBABISUFFIX}
+_OPSYS_INCLUDE_DIRS?=	/usr/include
 
 # Enable shlibs checks if readelf is set, not available by default.
 _OPSYS_CAN_CHECK_SHLIBS=	no
