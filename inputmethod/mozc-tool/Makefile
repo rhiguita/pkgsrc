@@ -1,22 +1,19 @@
-# $NetBSD: Makefile,v 1.4 2013/02/06 23:22:36 jperkin Exp $
+# $NetBSD: Makefile,v 1.6 2013/04/29 09:22:35 ryoon Exp $
 #
 
 PKGNAME=	${DISTNAME:S/mozc-/mozc-tool-/}
-PKGREVISION=	3
 
 INSTALLATION_DIRS+=	libexec
-
-.include "../../x11/qt4-libs/buildlink3.mk"
 
 ALL_ENV+=	qt_dir=${QTDIR}
 
 do-build:
 	cd ${WRKSRC} && env ${MAKE_ENV} \
-		${PYTHONBIN} build_mozc.py build -c Release ${_MAKE_JOBS} \
+		${PYTHONBIN} build_mozc.py build -c ${MOZC_BUILD_MODE} ${_MAKE_JOBS} \
 			gui/gui.gyp:mozc_tool
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/out_${OSDEST}/Release/mozc_tool \
+	${INSTALL_PROGRAM} ${WRKSRC}/out_${OSDEST}/${MOZC_BUILD_MODE}/mozc_tool \
 		${DESTDIR}${PREFIX}/libexec
 
-.include "../../inputmethod/ibus-mozc/Makefile.common"
+.include "../../inputmethod/mozc-server/Makefile.common"
