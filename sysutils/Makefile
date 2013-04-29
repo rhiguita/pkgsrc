@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.570 2013/04/21 21:32:35 imil Exp $
+# $NetBSD: Makefile,v 1.571 2013/04/22 09:40:33 imil Exp $
 #
 
 COMMENT=	System utilities
@@ -358,6 +358,7 @@ SUBDIR+=	pwgen
 SUBDIR+=	py-dbus
 SUBDIR+=	py-gnome-menus
 SUBDIR+=	py-notify
+SUBDIR+=	py-notify-python
 SUBDIR+=	qlogtools
 SUBDIR+=	radeontool
 SUBDIR+=	radmind

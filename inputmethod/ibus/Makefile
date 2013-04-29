@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2012/10/08 23:01:52 adam Exp $
+# $NetBSD: Makefile,v 1.24 2013/02/16 11:22:40 wiz Exp $
 #
 
 DISTNAME=	ibus-1.4.2
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://ibus.googlecode.com/files/
 
@@ -12,7 +12,7 @@ COMMENT=	Intelligent Input Bus
 LICENSE=	gnu-lgpl-v2.1
 
 DEPENDS+=	${PYPKGPREFIX}-xdg-[0-9]*:../../devel/py-xdg
-DEPENDS+=	${PYPKGPREFIX}-notify>=0.1.1nb3:../../sysutils/py-notify
+DEPENDS+=	${PYPKGPREFIX}-notify-python>=0.1.1nb3:../../sysutils/py-notify-python
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
