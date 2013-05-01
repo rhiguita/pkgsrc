@@ -1,8 +1,10 @@
-$NetBSD: patch-ap,v 1.11 2010/02/19 10:17:34 martti Exp $
+$NetBSD$
 
---- ssh.c.orig	2011-02-16 01:25:58.000000000 +0000
+Interix support
+
+--- ssh.c.orig	2012-07-06 03:45:01.000000000 +0000
 +++ ssh.c
-@@ -761,7 +761,7 @@ main(int ac, char **av)
+@@ -794,7 +794,7 @@ main(int ac, char **av)
  	if (ssh_connect(host, &hostaddr, options.port,
  	    options.address_family, options.connection_attempts, &timeout_ms,
  	    options.tcp_keep_alive, 
