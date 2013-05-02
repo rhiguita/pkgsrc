@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.1547 2013/05/01 20:04:12 imil Exp $
+$NetBSD: CHANGES-2013,v 1.1560 2013/05/02 07:54:28 wen Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -2371,3 +2371,16 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated filesystems/fs-utils to 20130430 [stacktic 2013-05-01]
 	Updated security/openssh to 6.2.1 [imil 2013-05-01]
 	Updated filesystems/tahoe-lafs to 1.10.0 [gdt 2013-05-01]
+	Updated www/p5-Plack to 1.0024 [wen 2013-05-02]
+	Updated devel/p5-autobox to 2.79 [wen 2013-05-02]
+	Updated time/p5-DateTime-Format-Natural to 1.02 [wen 2013-05-02]
+	Updated textproc/p5-XML-Bare to 0.52 [wen 2013-05-02]
+	Updated devel/p5-Test-Harness to 3.27 [wen 2013-05-02]
+	Updated databases/p5-DBI to 1.625 [wen 2013-05-02]
+	Added editors/em version 1.0.0 [agc 2013-05-02]
+	Updated devel/p5-Class-Accessor-Grouped to 0.10010 [wen 2013-05-02]
+	Updated devel/p5-B-Hooks-EndOfScope to 0.12 [wen 2013-05-02]
+	Updated devel/p5-namespace-clean to 0.24 [wen 2013-05-02]
+	Updated databases/p5-DBIx-Class to 0.08250 [wen 2013-05-02]
+	Updated www/py-tornado to 3.0.1 [wen 2013-05-02]
+	Updated emulators/suse121_libxml2 to 12.1nb6 [obache 2013-05-02]

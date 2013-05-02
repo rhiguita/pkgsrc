@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.163 2013/03/21 00:29:04 mspo Exp $
+# $NetBSD: Makefile,v 1.164 2013/04/02 06:46:07 wiz Exp $
 #
 
 COMMENT=	Editors
@@ -26,6 +26,7 @@ SUBDIR+=	ed
 SUBDIR+=	edt
 SUBDIR+=	elvis
 SUBDIR+=	elvis-x11
+SUBDIR+=	em
 SUBDIR+=	emacs
 SUBDIR+=	emacs-nox11
 SUBDIR+=	emacs-packages
