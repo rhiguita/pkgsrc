@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2012/12/16 01:52:09 obache Exp $
+# $NetBSD: Makefile,v 1.70 2013/03/04 10:01:13 roy Exp $
 
 DISTNAME=	cmake-${CMAKE_API}.10
 PKGREVISION=	4

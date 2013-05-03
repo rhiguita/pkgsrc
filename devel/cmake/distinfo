@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.42 2012/11/15 19:31:54 adam Exp $
+$NetBSD: distinfo,v 1.43 2013/02/16 11:40:37 wiz Exp $
 
 SHA1 (cmake-2.8.10.tar.gz) = 6384f2295d01f04d017e2701447378598b4c7223
 RMD160 (cmake-2.8.10.tar.gz) = 9af9e3f26f0f3d827ef566f99050fe6a2721dd25
