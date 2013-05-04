@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.431 2013/04/21 12:41:42 ryoon Exp $
+# $NetBSD: Makefile,v 1.432 2013/04/21 12:44:52 ryoon Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -300,6 +300,7 @@ SUBDIR+=	serialmail
 SUBDIR+=	sid-milter
 SUBDIR+=	sigrot
 SUBDIR+=	sma
+SUBDIR+=	smtp-vilter
 SUBDIR+=	smtpfeed
 SUBDIR+=	solid-pop3d
 SUBDIR+=	spamass-milter
