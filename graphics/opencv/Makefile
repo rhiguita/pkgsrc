@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2013/01/26 21:37:55 adam Exp $
+# $NetBSD: Makefile,v 1.34 2013/02/16 11:22:18 wiz Exp $
 
 DISTNAME=	OpenCV-2.4.3
 PKGNAME=	${DISTNAME:S/a$//:tl}
@@ -32,6 +32,11 @@ WRKSRC=		${WRKDIR}/${DISTNAME:S/a$//}
 CHECK_WRKREF_SKIP=	${PREFIX}/lib/libopencv_core.*
 
 .include "options.mk"
+
+.include "../../mk/compiler.mk"
+.if !empty(PKGSRC_COMPILER:Mclang)
+CXXFLAGS+=	-std=c++11
+.endif
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/jasper/buildlink3.mk"
