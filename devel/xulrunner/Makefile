@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.102 2013/03/30 20:03:08 ryoon Exp $
+# $NetBSD: Makefile,v 1.103 2013/04/05 13:30:17 ryoon Exp $
 
 .include "dist.mk"
 PKGNAME=	xulrunner-${MOZ_BRANCH}${MOZ_BRANCH_MINOR:S/esr//}
@@ -33,19 +33,6 @@ LDFLAGS.SunOS+=		-lm
 
 .include "mozilla-common.mk"
 .include "options.mk"
-
-PLIST_VARS+=	sps vorbis tremor
-
-.if !empty(MACHINE_PLATFORM:S/i386/x86/:MLinux-*-x86*)
-PLIST.sps=	yes
-.endif
-
-.if !empty(MACHINE_PLATFORM:MLinux-*-arm*) || ${OPSYS} == "DragonFly" \
-    || ${OPSYS} == "FreeBSD" || ${OPSYS} == "NetBSD" || ${OPSYS} == "OpenBSD"
-PLIST.tremor=	yes
-.else
-PLIST.vorbis=	yes
-.endif
 
 pre-configure:
 	cd ${WRKSRC} && autoconf
