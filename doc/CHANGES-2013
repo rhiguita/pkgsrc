@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.1603 2013/05/08 12:40:10 wen Exp $
+$NetBSD: CHANGES-2013,v 1.1606 2013/05/08 17:50:46 adam Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -2451,4 +2451,7 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated x11/ruby-gnome2-vte to 2.0.0 [obache 2013-05-08]
 	Updated x11/ruby-gnome2-gtksourceview2 to 2.0.0 [obache 2013-05-08]
 	Updated x11/ruby-gnome2-gtksourceview3 to 2.0.0 [obache 2013-05-08]
-
+	Updated archivers/lhasa to 0.1.0 [shattered 2013-05-08]
+	Updated graphics/ilmbase to 2.0.0 [adam 2013-05-08]
+	Updated graphics/openexr to 2.0.0 [adam 2013-05-08]
+	Updated misc/tmux to 1.8nb1 [minskim 2013-05-08]
