@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.206 2013/04/14 00:51:43 cheusov Exp $
+# $NetBSD: Makefile,v 1.207 2013/04/22 09:28:15 marino Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -114,6 +114,7 @@ SUBDIR+=	libmpeg2
 SUBDIR+=	libmpeg3
 SUBDIR+=	libnms
 SUBDIR+=	libogg
+SUBDIR+=	liboggz
 SUBDIR+=	libquicktime
 SUBDIR+=	libtheora
 SUBDIR+=	libtheora-docs
