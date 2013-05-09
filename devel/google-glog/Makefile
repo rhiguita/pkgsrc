@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2013/02/08 22:06:37 tonnerre Exp $
+# $NetBSD: Makefile,v 1.2 2013/02/26 10:24:50 joerg Exp $
 #
 
 DISTNAME=	glog-0.3.3
@@ -22,6 +22,11 @@ PKGCONFIG_OVERRIDE+=	libglog.pc.in
 
 .if ${OPSYS} == "NetBSD" && exists(/usr/include/execinfo.h)
 LIBS+=		-lexecinfo
+.endif
+
+.include "../../mk/compiler.mk"
+.if !empty(PKGSRC_COMPILER:Mclang)
+CXXFLAGS+=	-std=c++11
 .endif
 
 .include "../../devel/googletest/buildlink3.mk"

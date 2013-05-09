@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2013/02/16 11:19:44 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2013/04/10 15:05:06 drochner Exp $
 #
 
 DISTNAME=	QScintilla-gpl-2.7.1
@@ -20,8 +20,9 @@ PY_PATCHPLIST=		yes
 PLIST_SUBST+=		PYVERSSUFFIX=${PYVERSSUFFIX}
 
 do-configure:
-		(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV}  \
-	  	${PYTHONBIN} configure.py)
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${PYTHONBIN} configure.py \
+	    --qmake=${QTDIR}/bin/qmake --sip=${PREFIX}/bin/sip${PYVERSSUFFIX} \
+	    --pyqt-sipdir=${PREFIX}/share/sip${PYVERSSUFFIX}
 
 
 .include "../../lang/python/extension.mk"
