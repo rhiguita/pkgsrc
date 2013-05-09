@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2013/05/09 01:39:42 mef Exp $
+# $NetBSD: Makefile,v 1.2 2013/05/09 02:05:55 obache Exp $
 
 DISTNAME=		lldpd-0.7.2
 CATEGORIES=		net
@@ -11,6 +11,8 @@ LICENSE=		isc
 # `lldpcli` will be linked to GNU Readline (which is GPL licensed)
 # if available. To avoid this, use `--without-readline` as a configure
 # option.
+
+NOT_FOR_PLATFORM=	DragonFly-*-*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 

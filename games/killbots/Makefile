@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.38 2013/02/16 11:21:22 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2013/04/03 12:03:35 markd Exp $
 
 DISTNAME=	killbots-${_KDE_VERSION}
+PKGREVISION=	1
 CATEGORIES=	games
 COMMENT=	KDE port of the classic BSD console game robots
 

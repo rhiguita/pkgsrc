@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.38 2013/02/16 11:21:22 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2013/04/03 12:03:42 markd Exp $
 
 DISTNAME=	ksudoku-${_KDE_VERSION}
+PKGREVISION=	1
 CATEGORIES=	games
 COMMENT=	a logic-based symbol placement puzzle
 

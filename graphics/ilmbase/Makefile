@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/10/06 14:10:59 asau Exp $
+# $NetBSD: Makefile,v 1.10 2013/05/09 07:39:09 adam Exp $
 
 DISTNAME=	ilmbase-2.0.0
 CATEGORIES=	graphics

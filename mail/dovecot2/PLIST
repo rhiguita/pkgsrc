@@ -617,6 +617,7 @@ share/doc/dovecot/wiki/Logging.txt
 share/doc/dovecot/wiki/LoginProcess.txt
 share/doc/dovecot/wiki/MDA.txt
 share/doc/dovecot/wiki/MTA.txt
+share/doc/dovecot/wiki/MailboxSettings.txt
 share/doc/dovecot/wiki/MailLocation.LocalDisk.txt
 share/doc/dovecot/wiki/MailLocation.Maildir.txt
 share/doc/dovecot/wiki/MailLocation.SharedDisk.txt
