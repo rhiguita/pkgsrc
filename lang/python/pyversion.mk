@@ -1,4 +1,4 @@
-# $NetBSD: pyversion.mk,v 1.105 2012/12/10 03:15:48 tsarna Exp $
+# $NetBSD: pyversion.mk,v 1.106 2013/04/29 10:49:37 wiz Exp $
 
 # This file determines which Python version is used as a dependency for
 # a package.
@@ -195,11 +195,13 @@ PYPKGPREFIX=
 PTHREAD_OPTS+=	require
 .include "../../mk/pthread.buildlink3.mk"
 
-.if defined(PYTHON_FOR_BUILD_ONLY)
-BUILDLINK_DEPMETHOD.python?=	build
-.endif
 .if defined(PYPKGSRCDIR)
-.include "${PYPKGSRCDIR}/buildlink3.mk"
+# XXX BUILD_DEPENDS/TOOL_DEPENDS split makes this variable name confusing.
+.  if defined(PYTHON_FOR_BUILD_ONLY)
+TOOL_DEPENDS+=	${PYDEPENDENCY}
+.  else
+.    include "${PYPKGSRCDIR}/buildlink3.mk"
+.  endif
 .endif
 
 PYTHONBIN=	${LOCALBASE}/bin/python${PYVERSSUFFIX}
