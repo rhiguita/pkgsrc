@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2013/05/10 01:25:03 riastradh Exp $
+# $NetBSD: Makefile,v 1.3 2013/05/10 01:29:59 riastradh Exp $
 
 .include "../../devel/libevent/Makefile.common"
 
@@ -11,6 +11,8 @@ COMMENT=	Python libevent rpcgen script
 LICENSE=	modified-bsd
 
 REPLACE_PYTHON=		event_rpcgen.py
+
+INSTALLATION_DIRS+=	bin
 
 do-configure:
 do-build:
