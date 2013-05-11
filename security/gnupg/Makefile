@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.117 2013/01/07 21:53:53 wiz Exp $
+# $NetBSD: Makefile,v 1.118 2013/02/06 23:23:36 jperkin Exp $
 
 DISTNAME=	gnupg-1.4.13
 PKGREVISION=	2
@@ -36,6 +36,10 @@ CONFIGURE_ARGS+=	--disable-gnupg-iconv
 .if (${OPSYS} == "AIX" || ${OPSYS} == "Darwin" || ${OPSYS} == "SunOS") \
     && defined(ABI) && ${ABI} == 64
 CONFIGURE_ARGS+=	--disable-asm
+.endif
+
+.if !empty(USE_CROSS_COMPILE:M[yY][eE][sS])
+CONFIGURE_ENV+=		CC_FOR_BUILD=${NATIVE_CC:Q}
 .endif
 
 post-install:

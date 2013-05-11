@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2013/02/01 22:21:10 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2013/03/15 18:17:55 drochner Exp $
 
 DISTNAME=	libksba-1.3.0
 CATEGORIES=	security
@@ -16,6 +16,10 @@ INFO_FILES=		yes
 
 TEST_TARGET=		check
 TEXINFO_REQD=		4.0
+
+.if !empty(USE_CROSS_COMPILE:M[yY][eE][sS])
+CONFIGURE_ARGS+=	CC_FOR_BUILD=${NATIVE_CC:Q}
+.endif
 
 .include "../../security/libgcrypt/buildlink3.mk"
 BUILDLINK_API_DEPENDS.libgpg-error+=	libgpg-error>=1.2

@@ -47,8 +47,8 @@
 # PYTHON_FOR_BUILD_ONLY
 #	Whether Python is needed only at build time or at run time.
 #
-#	Possible values: (defined) (undefined)
-#	Default: (undefined)
+#	Possible values: yes no tool
+#	Default: no
 #
 # PYTHON_SELF_CONFLICT
 #	If set to "yes", additional CONFLICTS entries are added for
@@ -196,10 +196,12 @@ PTHREAD_OPTS+=	require
 .include "../../mk/pthread.buildlink3.mk"
 
 .if defined(PYPKGSRCDIR)
-# XXX BUILD_DEPENDS/TOOL_DEPENDS split makes this variable name confusing.
-.  if defined(PYTHON_FOR_BUILD_ONLY)
-TOOL_DEPENDS+=	${PYDEPENDENCY}
+.  if !empty(PYTHON_FOR_BUILD_ONLY:M[tT][oO][oO][lL])
+TOOL_DEPENDS+=			${PYDEPENDENCY}
 .  else
+.    if !empty(PYTHON_FOR_BUILD_ONLY:M[yY][eE][sS])
+BUILDLINK_DEPMETHOD.python?=	build
+.    endif
 .    include "${PYPKGSRCDIR}/buildlink3.mk"
 .  endif
 .endif
