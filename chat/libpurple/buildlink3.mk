@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.38 2013/01/26 21:36:14 adam Exp $
+# $NetBSD: buildlink3.mk,v 1.39 2013/02/16 11:19:23 wiz Exp $
 
 BUILDLINK_TREE+=	libpurple
 
@@ -23,6 +23,8 @@ pkgbase := libpurple
 .if empty(PKG_BUILD_OPTIONS.libpurple:Mgnutls)
 .  include "../../devel/nss/buildlink3.mk"
 .endif
+
+.include "../../devel/glib2/buildlink3.mk"
 .endif # LIBPURPLE_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-libpurple

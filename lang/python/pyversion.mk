@@ -1,4 +1,4 @@
-# $NetBSD: pyversion.mk,v 1.106 2013/04/29 10:49:37 wiz Exp $
+# $NetBSD: pyversion.mk,v 1.108 2013/05/10 20:07:34 riastradh Exp $
 
 # This file determines which Python version is used as a dependency for
 # a package.
@@ -195,6 +195,7 @@ PYPKGPREFIX=
 PTHREAD_OPTS+=	require
 .include "../../mk/pthread.buildlink3.mk"
 
+PYTHON_FOR_BUILD_ONLY?=		no
 .if defined(PYPKGSRCDIR)
 .  if !empty(PYTHON_FOR_BUILD_ONLY:M[tT][oO][oO][lL])
 TOOL_DEPENDS+=			${PYDEPENDENCY}

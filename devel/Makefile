@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1740 2013/05/10 01:22:27 riastradh Exp $
+# $NetBSD: Makefile,v 1.1742 2013/05/11 18:06:26 schmonz Exp $
 #
 
 COMMENT=	Development utilities
@@ -447,6 +447,7 @@ SUBDIR+=	lua-lrexlib-onig
 SUBDIR+=	lua-lrexlib-pcre
 SUBDIR+=	lua-lrexlib-posix
 SUBDIR+=	lua-mode
+SUBDIR+=	lua-penlight
 SUBDIR+=	lua-stdlib
 SUBDIR+=	lua-stdlib-doc
 SUBDIR+=	lutok
@@ -813,6 +814,7 @@ SUBDIR+=	p5-Git-Wrapper
 SUBDIR+=	p5-Gnome2
 SUBDIR+=	p5-Gnome2-GConf
 SUBDIR+=	p5-Graph
+SUBDIR+=	p5-Gravatar-URL
 SUBDIR+=	p5-Gtk2-GladeXML
 SUBDIR+=	p5-Guard
 SUBDIR+=	p5-Hash-Case

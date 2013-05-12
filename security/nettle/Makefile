@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2013/03/15 18:22:03 drochner Exp $
+# $NetBSD: Makefile,v 1.10 2013/04/29 16:42:24 adam Exp $
 
 DISTNAME=	nettle-2.7
 CATEGORIES=	devel security
@@ -16,6 +16,12 @@ USE_TOOLS+=		gm4 gmake
 GNU_CONFIGURE=		yes
 SET_LIBDIR=		yes
 CONFIGURE_ARGS+=	--disable-openssl --disable-shared
+
+.include "../../mk/bsd.prefs.mk"
+
+.if !empty(USE_CROSS_COMPILE:M[yY][eE][sS])
+CONFIGURE_ENV+=		CC_FOR_BUILD=${NATIVE_CC:Q}
+.endif
 
 INFO_FILES=		yes
 TEST_TARGET=		check
