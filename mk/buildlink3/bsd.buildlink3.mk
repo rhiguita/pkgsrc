@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink3.mk,v 1.218 2013/02/02 01:04:59 hans Exp $
+# $NetBSD: bsd.buildlink3.mk,v 1.220 2013/05/13 11:38:30 jperkin Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -850,7 +850,7 @@ _BLNK_PASSTHRU_RPATHDIRS+=	${BUILDLINK_PASSTHRU_RPATHDIRS}
 # Strip out /usr/lib (and /usr/lib${LIBABISUFFIX}}) as it's always 
 # automatically in the runtime library search path.
 #
-.for _dir_ in ${SYSTEM_DEFAULT_RPATH:ts:}
+.for _dir_ in ${SYSTEM_DEFAULT_RPATH:S/:/ /g}
 _BLNK_PASSTHRU_RPATHDIRS:=	${_BLNK_PASSTHRU_RPATHDIRS:N${_dir_}}
 .endfor
 
@@ -986,7 +986,7 @@ _BLNK_TRANSFORM+=	rpath:${_dir_}:${_BLNK_MANGLE_DIR.${_dir_}}
 # Protect /usr/lib/* as they're all allowed to be specified for the
 # runtime library search path.
 #
-.for _dir_ in ${SYSTEM_DEFAULT_RPATH:ts:}
+.for _dir_ in ${SYSTEM_DEFAULT_RPATH:S/:/ /g}
 _BLNK_TRANSFORM+=	sub-rpath:${_dir_}:${_BLNK_MANGLE_DIR.${_dir}}
 .endfor
 #
