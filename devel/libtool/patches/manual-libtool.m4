@@ -14,6 +14,15 @@ $NetBSD$
  ])
  
  
+@@ -1098,7 +1101,7 @@ m4_defun([_LT_DARWIN_LINKER_FEATURES],
+   _LT_TAGVAR(allow_undefined_flag, $1)="$_lt_dar_allow_undefined"
+   case $cc_basename in
+      ifort*) _lt_dar_can_shared=yes ;;
+-     *) _lt_dar_can_shared=$GCC ;;
++     *) _lt_dar_can_shared=yes ;;
+   esac
+   if test "$_lt_dar_can_shared" = "yes"; then
+     output_verbose_link_cmd=func_echo_all
 @@ -2468,7 +2471,7 @@ dgux*)
    shlibpath_var=LD_LIBRARY_PATH
    ;;
